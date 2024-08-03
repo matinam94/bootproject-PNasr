@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "ubuntu";
+    src: url(../Fonts/Ubuntu-Medium.ttf),
+        url(../Fonts/Ubuntu-MediumItalic.ttf),
+        url(../Fonts/Ubuntu-Bold.ttf),
+        url(../Fonts/Ubuntu-BoldItalic.ttf),
+        url(../Fonts/Ubuntu-Light.ttf),
+        url(../Fonts/Ubuntu-LightItalic.ttf),
+        url(../Fonts/Ubuntu-Regular.ttf),
+        url(../Fonts/Ubuntu-Italic.ttf);
+}
+@font-face {
+    font-family: "Signika";
+    src: url(../Fonts/Signika-Bold.ttf),
+        url(../Fonts/Signika-Light.ttf),
+        url(../Fonts/Signika-Medium.ttf),
+        url(../Fonts/Signika-Regular.ttf),
+        url(../Fonts/Signika-SemiBold.ttf);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "ubuntu";
+}
+nav {
+    color: #010C8E;
+}
+nav .navbar-brand,
+nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: inherit;
+}
+.brand {
+    gap: 10px;
+}
+
+
+.starting-banner {
+    min-height: 100vh;
+    background: url("/Images/fca58f4fa5f3c8fc666ef47d54f45cb1.jfif") no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    background-size: 100%;
+    width: auto;
+}
+
+
+
+.navbar {
+    transition: all 1s;
+    background-color: #FFFFFF73;
+}
+.navbar-scrolled {
+    background-color: #0D47A1 !important;
+    box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
+}
+.white-color {
+    color: white !important;
+}
