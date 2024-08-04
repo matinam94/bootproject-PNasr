@@ -27,7 +27,7 @@
 
 body {
     font-family: "ubuntu";
-    background-color: #010C8E;
+
 }
 nav {
     color: #010C8E;
@@ -153,10 +153,19 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 
+.under-banner {
+  background-color: #B0BEC596;
+}
 
-
-  .why-bg {
-    background: url("/Images/wave\ \(2\)\ 1\ \(1\).png") no-repeat;
-    background-size: 100%;
-    margin-top: -8.55rem;
-  }
+.why-bg {
+  background: url("/Images/wave\ \(2\)\ 1\ \(1\).png") no-repeat;
+  background-size: 100%;
+  margin-top: -8.55rem;
+}
+.question {
+  background: url("/Images/Rectangle\ 16.png");
+  background-position: center;
+  /* background-origin: border-box; */
+  background-size: 100%;
+  width: auto;
+}
