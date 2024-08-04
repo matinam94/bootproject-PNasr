@@ -1,272 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<link rel="stylesheet" href="Styles/style.css" />
+		<title>InnoWater</title>
+	</head>
 
+	<body>
+		<header>
+			<nav
+				class="navbar navbar-expand-md navbar-light bg-* fixed-top mt-5 mx-5 mw-75 rounded-5 shadow">
+				<div class="container">
+					<a class="navbar-brand" href="#">InnoWater</a>
 
-	<link rel="stylesheet" href="Styles/style.css">
-	<title>InnoWater</title>
-</head>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent">
+						<ul
+							class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-between"
+							style="width: 550px">
+							<li class="nav-item">
+								<a
+									class="nav-link fw-bold fst-italic active"
+									aria-current="page"
+									href="#"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">How it works</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About-Us</a>
+							</li>
 
-<body>
-	<header>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
 
-		<nav class="navbar navbar-expand-md navbar-light bg-* fixed-top mt-5 mx-5 mw-75 rounded-5 shadow">
-			<div class="container">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact-Us</a>
+							</li>
+						</ul>
 
-				<a class="navbar-brand" href="#">InnoWater</a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-between" style="width: 550px;">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">How it works</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About-Us</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#">Shop</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact-Us</a>
-						</li>
-					</ul>
-					<!-- <form class="d-flex" role="search">
-						<input class="form-control bg-primary-subtle border-dark-subtle me-2" type="search" placeholder="Search" aria-label="Search" />
-						<button class="btn btn-outline-dark btn-search" type="submit">
-							Search
-						</button>
-					</form> -->
-					<ul class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-between align-items-center"
-						style="width: 175px;">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">
-								<svg width="24" height="24" stroke="5" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path class="cart-shop" fill-rule="evenodd" clip-rule="evenodd"
-										d="M23.3873 5.58997C22.911 5.04783 22.2186 4.73601 21.4902 4.73601H8.59652C8.09973 4.73601 7.69654 5.13287 7.69654 5.62186C7.69654 6.11084 8.09973 6.5077 8.59652 6.5077H21.4902C21.7722 6.5077 21.9474 6.65888 22.0266 6.74865C22.1058 6.83959 22.233 7.03212 22.1922 7.30614L21.0534 15.0531C20.9634 15.6602 20.4258 16.1185 19.8018 16.1185H6.70897C6.04538 16.1185 5.5042 15.6283 5.449 14.9787L4.29343 1.42887C4.25983 1.02729 3.95384 0.697756 3.55065 0.62925L1.05351 0.202865C0.557921 0.124911 0.097133 0.442633 0.0131351 0.925712C-0.0708628 1.40761 0.256729 1.86589 0.746317 1.94975L2.55827 2.25802L3.65504 15.1264C3.78944 16.702 5.10221 17.8902 6.70897 17.8902H19.8018C21.315 17.8902 22.6182 16.7799 22.8342 15.3071L23.9741 7.56008C24.0785 6.84904 23.8637 6.1321 23.3873 5.58997ZM4.68955 21.5517C4.68955 20.5654 5.50553 19.7623 6.50751 19.7623C7.50948 19.7623 8.32426 20.5654 8.32426 21.5517C8.32426 22.5379 7.50948 23.3399 6.50751 23.3399C5.50553 23.3399 4.68955 22.5379 4.68955 21.5517ZM18.1928 21.5517C18.1928 20.5654 19.0076 19.7623 20.0095 19.7623C21.0115 19.7623 21.8275 20.5654 21.8275 21.5517C21.8275 22.5379 21.0115 23.3399 20.0095 23.3399C19.0076 23.3399 18.1928 22.5379 18.1928 21.5517ZM18.7786 9.98799C18.7786 10.477 18.3755 10.8738 17.8787 10.8738H14.5511C14.0532 10.8738 13.6512 10.477 13.6512 9.98799C13.6512 9.49901 14.0532 9.10215 14.5511 9.10215H17.8787C18.3755 9.10215 18.7786 9.49901 18.7786 9.98799Z"
-										fill="#010C8E" />
+						<ul
+							class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-between align-items-center"
+							style="width: 175px">
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="#">
+									<svg
+										width="24"
+										height="24"
+										stroke="5"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="cart-shop"
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M23.3873 5.58997C22.911 5.04783 22.2186 4.73601 21.4902 4.73601H8.59652C8.09973 4.73601 7.69654 5.13287 7.69654 5.62186C7.69654 6.11084 8.09973 6.5077 8.59652 6.5077H21.4902C21.7722 6.5077 21.9474 6.65888 22.0266 6.74865C22.1058 6.83959 22.233 7.03212 22.1922 7.30614L21.0534 15.0531C20.9634 15.6602 20.4258 16.1185 19.8018 16.1185H6.70897C6.04538 16.1185 5.5042 15.6283 5.449 14.9787L4.29343 1.42887C4.25983 1.02729 3.95384 0.697756 3.55065 0.62925L1.05351 0.202865C0.557921 0.124911 0.097133 0.442633 0.0131351 0.925712C-0.0708628 1.40761 0.256729 1.86589 0.746317 1.94975L2.55827 2.25802L3.65504 15.1264C3.78944 16.702 5.10221 17.8902 6.70897 17.8902H19.8018C21.315 17.8902 22.6182 16.7799 22.8342 15.3071L23.9741 7.56008C24.0785 6.84904 23.8637 6.1321 23.3873 5.58997ZM4.68955 21.5517C4.68955 20.5654 5.50553 19.7623 6.50751 19.7623C7.50948 19.7623 8.32426 20.5654 8.32426 21.5517C8.32426 22.5379 7.50948 23.3399 6.50751 23.3399C5.50553 23.3399 4.68955 22.5379 4.68955 21.5517ZM18.1928 21.5517C18.1928 20.5654 19.0076 19.7623 20.0095 19.7623C21.0115 19.7623 21.8275 20.5654 21.8275 21.5517C21.8275 22.5379 21.0115 23.3399 20.0095 23.3399C19.0076 23.3399 18.1928 22.5379 18.1928 21.5517ZM18.7786 9.98799C18.7786 10.477 18.3755 10.8738 17.8787 10.8738H14.5511C14.0532 10.8738 13.6512 10.477 13.6512 9.98799C13.6512 9.49901 14.0532 9.10215 14.5511 9.10215H17.8787C18.3755 9.10215 18.7786 9.49901 18.7786 9.98799Z"
+											fill="#010C8E" />
+									</svg>
+								</a>
+							</li>
+							<li class="nav-item">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									fill="currentColor"
+									class="bi bi-person"
+									viewBox="0 0 16 16">
+									<path
+										class="person"
+										d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
 								</svg>
-							</a>
-						</li>
-						<li class="nav-item">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-								class="bi bi-person" viewBox="0 0 16 16">
-								<path
-									d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-							</svg>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-outline-dark login" href="#">Login</a>
-						</li>
-					</ul>
+							</li>
+							<li class="nav-item">
+								<a class="btn btn-outline-dark login" href="#"
+									>Login</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="starting-banner d-flex">
+			<div class="row align-items-center p-5">
+				<div class="col-md-5">
+					<h2 class="fs-1 mb-5">Lorem ipsum dolor sit amet.</h2>
+					<p class="fs-5">
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Cum maxime amet nihil inventore, doloribus ad
+						autem accusantium possimus officiis odit.
+					</p>
+				</div>
+				<div class="col-md-4 offset-md-3">
+					<div class="search_box">
+						<input type="checkbox" id="check" hidden />
+						<div class="search_box_content">
+							<input
+								type="text"
+								placeholder="Type here then press Enter" />
+							<label for="check">
+								<i class="fa fa-search"></i>
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
-		</nav>
+		</div>
 
-	</header>
+		<section class="why-bg">
+			<div class="container">
+				<div class="d-flex justify-content-center">
+					<h4 class="mt-5 p-3 rounded-pill" style="background-color: #EFF3FF96;">
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+					</h4>
+				</div>
+				<div class="lorem">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perferendis repellendus, animi asperiores aspernatur dolorum. Voluptatum animi molestias, error eum consequatur similique magnam possimus pariatur quasi voluptatibus fuga cupiditate reprehenderit asperiores iusto laboriosam magni sit cumque alias ad. Numquam fugit facilis obcaecati commodi, quo, totam neque minus harum ab consequatur dolorem, dolores voluptatibus iure sint. Accusantium suscipit facilis consequatur voluptas distinctio cumque animi hic, vel ipsa labore deserunt eligendi neque, sapiente reprehenderit porro amet quibusdam expedita error! Esse est recusandae fugit temporibus voluptate quo officiis. Alias facere sit nulla iure laborum necessitatibus? Dignissimos provident illo necessitatibus voluptatem. Nam, at nihil!</p>
+				</div>
+			</div>
+		</section>
 
+		<footer></footer>
 
+		<script>
+			const navEl = document.querySelector(".navbar");
+			const navBrand = document.querySelector(".navbar-brand");
+			const navLinks = document.querySelectorAll(".nav-link");
+			// const navLink = document.querySelector(".navbar-nav a:nth-child(1)");
+			const cartshop = document.querySelector(".cart-shop");
+			const person = document.querySelector(".person");
+			const login = document.querySelector(".login");
+			// const search = document.querySelector(".btn-search");
 
-	<!-- <section class="mt-5"></section> -->
-	<div class="starting-banner">
+			window.addEventListener("scroll", () => {
+				if (window.scrollY >= 60) {
+					navEl.classList.add("navbar-scrolled");
+					navEl.classList.remove("mt-5", "rounded-5", "mx-5");
 
-	</div>
+					navBrand.classList.add("white-color");
 
+					// navLink.classList.add("fw-bold")
 
-	<section>
-		<p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid, accusamus maxime
-			voluptatem dicta minus, voluptatibus amet atque magni odio in tenetur fugit odit libero dolorum, nisi
-			mollitia quas incidunt reprehenderit illum! Hic a ab magnam earum ducimus quam. Voluptate, eaque! Vero in,
-			minus reiciendis pariatur veritatis hic fugit deserunt possimus architecto quibusdam ducimus praesentium
-			quia natus. Dolorum, voluptas placeat quaerat provident ullam quasi perspiciatis accusamus non enim,
-			necessitatibus eveniet eum facilis inventore molestias asperiores ipsa doloribus facere! Quam earum
-			asperiores nostrum fugit quisquam officia dignissimos nam commodi! Illum quo atque impedit voluptas nam
-			aperiam omnis possimus laborum ad est quibusdam minus temporibus excepturi dicta, maiores expedita! Tenetur
-			dolore amet aspernatur consectetur aut in, praesentium modi quasi iste eaque voluptas laborum. Mollitia
-			voluptates tempore ea praesentium! Est, distinctio ipsum recusandae odit libero velit facere obcaecati eum
-			consectetur suscipit! Magnam accusamus tenetur, itaque quas ipsum quod dolor earum, ea magni nam alias
-			suscipit autem beatae. Ratione impedit accusantium iusto molestias, ab iure autem ex soluta. Amet
-			accusantium expedita laudantium esse cupiditate corporis eligendi rem sunt soluta sit. Sed, vitae dolores
-			quia, dolore porro illo consectetur doloribus sunt quibusdam, exercitationem tenetur fugiat aperiam autem
-			eius reiciendis officia? Ipsa soluta vitae saepe quod amet nesciunt quibusdam voluptate quam est, eum
-			molestiae iste magnam, rerum sequi laudantium inventore architecto maiores. Consequuntur a neque delectus
-			porro sunt, magnam nemo commodi iusto quo, dignissimos tenetur nostrum ex atque. Explicabo accusamus
-			expedita numquam, aspernatur quam harum, culpa assumenda ratione quae reprehenderit at esse omnis provident
-			laborum labore consequuntur, nihil aperiam. Rerum aut animi, ea a dolores sed dolorem quo aperiam cum maxime
-			illo beatae quae reiciendis eum? Obcaecati minus, delectus ea aut, consequatur, repudiandae similique amet
-			accusamus sapiente corrupti ullam! Sit quas natus sequi culpa minima a ex fugiat eligendi quidem libero
-			cumque ducimus aspernatur nobis, in impedit eos molestias totam, commodi exercitationem distinctio, sed
-			ipsum. Iusto assumenda minus impedit quos, consequatur odio? Incidunt quae in dolor, saepe at praesentium
-			asperiores tempora ipsum blanditiis dolore itaque minus autem doloremque. Veritatis consequatur perferendis
-			labore nulla! Id quam ex dolorum consequuntur. Hic unde veritatis omnis nostrum error vero exercitationem in
-			saepe vel esse. Itaque quod voluptates praesentium. Molestias sint vel ipsam veritatis eveniet nam dolor
-			quisquam minus earum maxime, provident quidem velit possimus? Quis repellendus doloremque dolorem officiis
-			aperiam provident delectus vel facere nam, quaerat excepturi reiciendis maxime esse ipsum aliquam at soluta,
-			expedita aliquid, veniam dolorum! Repellendus saepe consequuntur ut! Reprehenderit eos ipsam velit ad
-			cupiditate similique sequi enim recusandae, exercitationem, accusantium sed autem fugit minima quo officia
-			distinctio quasi laudantium impedit alias. Alias consectetur mollitia nihil obcaecati optio ipsum ad dicta
-			exercitationem perspiciatis, dolore incidunt odit quis et tenetur. Dolores officia, aut adipisci veniam
-			placeat qui modi iusto suscipit odit ad velit magni nesciunt ratione quas itaque iure id rerum numquam omnis
-			nulla! Earum qui dignissimos nobis vitae voluptatum autem libero eaque ad possimus cumque. Officia illum
-			magnam laboriosam facere omnis reprehenderit quia eveniet, consequuntur dolor tenetur. Numquam nesciunt
-			natus non vel commodi rem, ad rerum mollitia soluta aspernatur earum beatae blanditiis fugiat consequatur
-			quibusdam itaque, tenetur eaque atque sequi consequuntur officia, quasi repellendus excepturi. Cum aliquid
-			labore soluta nesciunt quod recusandae impedit molestias? Fuga rem pariatur hic porro quaerat eos quasi
-			aliquam dolorum facilis, earum eaque odio corrupti veritatis nam culpa voluptatem quos perspiciatis qui
-			molestias aut, voluptatum est fugiat magni possimus? Debitis eius quibusdam modi aperiam neque ducimus?
-			Illum pariatur quidem nostrum quo ratione nihil debitis, reiciendis accusamus est, vero dicta. Blanditiis,
-			sapiente. Eum exercitationem ut illo, sequi odio veniam repellat non sapiente magnam? Non nisi adipisci
-			voluptatum natus aspernatur voluptate doloremque, beatae distinctio dicta ullam ut ipsam quis soluta, vero
-			labore aliquam assumenda aliquid veniam minus. At odit est voluptatem itaque omnis reiciendis. Minus at quae
-			atque provident illo dolores rerum mollitia vel magnam? Itaque libero vitae ipsam est voluptate
-			necessitatibus, quidem iste velit quae, sequi, commodi minima odit rem! Ducimus qui soluta est pariatur nisi
-			quo minus, fuga ad distinctio beatae aliquam debitis obcaecati ullam hic dolor. Explicabo ratione omnis
-			veritatis ea nobis, pariatur quod eveniet consequuntur dolor. Illum, a voluptatibus commodi ex expedita quia
-			impedit similique molestias dicta animi qui iure consequuntur harum veniam! Ipsum, magnam nobis quibusdam
-			cumque ipsam ab aperiam quae. Maxime molestias repellat ipsa architecto nemo ullam eius, rem corrupti
-			aliquam facere temporibus. Delectus maiores placeat odit officiis ad repellat soluta asperiores a fugiat,
-			sit nam repudiandae doloremque dolores ratione incidunt minima omnis aliquam praesentium. Similique iste
-			reiciendis, mollitia inventore hic itaque dolorum dolore assumenda, voluptatibus voluptates consequatur
-			amet! Exercitationem ad eum quibusdam itaque iste provident praesentium assumenda voluptatum. Quo voluptate
-			natus libero sed accusamus, totam nemo recusandae eius tempore illo voluptatum doloribus nam neque commodi
-			nobis. Possimus id hic corporis, veniam exercitationem corrupti nobis quia neque alias maiores totam,
-			repellendus iste facilis laborum? Architecto obcaecati voluptatem, veritatis sunt iusto debitis unde
-			pariatur autem vero laudantium tenetur deserunt sed suscipit quaerat ad tempora ipsam delectus quasi
-			reiciendis porro. Perspiciatis ipsa veniam, suscipit quisquam esse dolorem amet aut. Sit in nihil
-			reiciendis, fugit minus aperiam dolorum architecto corporis ratione laboriosam deserunt quasi quod provident
-			ipsum itaque placeat labore earum ullam quo aut! Explicabo id omnis quidem sunt perspiciatis iste neque
-			recusandae est, quis necessitatibus enim. Est labore possimus dolor, velit quisquam ea modi fuga consectetur
-			soluta quaerat voluptas nobis officia ducimus rerum neque delectus et! Ex eveniet nam, nobis impedit esse
-			autem odio necessitatibus natus vel commodi mollitia atque iusto! Odit, in, itaque rerum ad inventore
-			exercitationem dignissimos temporibus veritatis vero beatae, saepe cumque culpa reprehenderit facilis quae
-			nemo fugiat modi atque. Tempora asperiores accusantium dignissimos doloremque nostrum eos, harum quisquam
-			distinctio repellat rerum neque id, eum sint. Non quaerat similique numquam ipsum autem aliquam debitis!
-			Ratione eveniet accusamus, minima iure blanditiis perspiciatis officia facilis deserunt facere culpa ad sed
-			nam ex molestias dolores sit dolor aspernatur, nihil dolorem? Iusto expedita voluptatem sint vitae facere
-			laboriosam fugit, accusantium illo officia quaerat exercitationem eaque a beatae dolorum explicabo dolorem
-			voluptate natus eligendi quidem accusamus quam ab eos. Nisi minus esse, similique deleniti voluptatum
-			nesciunt eaque impedit, asperiores, nemo consequuntur quae. Voluptas sit nam provident ratione dolorum
-			inventore velit dolore magni nulla placeat sint, nisi neque ad, quo saepe officiis consequuntur libero ut
-			obcaecati! Illo eveniet corporis natus iusto harum eaque illum accusamus aperiam. Omnis ad magni id ab
-			eligendi ullam, commodi veniam voluptates ex ipsam praesentium quibusdam perspiciatis inventore dolore
-			voluptatibus placeat, numquam molestias totam. Vero hic modi asperiores cumque sit possimus qui libero unde
-			tenetur, inventore incidunt, ipsa distinctio alias dolorum illum harum quis, et voluptas adipisci quisquam.
-			Nobis facilis sint inventore ratione. Cumque aut doloremque nemo. At blanditiis praesentium nesciunt! Ipsam
-			modi quod atque sequi error voluptatem, facilis totam unde, ab expedita reprehenderit ullam magni harum
-			maiores accusamus quaerat. In tempore voluptatibus obcaecati voluptate quod explicabo qui sint ipsa, vel,
-			assumenda veniam quam soluta error doloribus totam tempora pariatur, culpa deleniti. Optio eum quo officiis
-			fuga reprehenderit! Similique ut quas ea libero reiciendis recusandae odio necessitatibus eaque natus
-			impedit veniam earum distinctio voluptatibus expedita vitae ipsa voluptatem labore nesciunt, vel accusamus
-			sed excepturi! Asperiores unde quidem, libero quasi hic quas autem. At provident voluptates, fugiat magni
-			explicabo maiores dolores iure voluptas doloribus nihil expedita harum saepe blanditiis commodi? Non
-			molestias explicabo facere at hic repudiandae exercitationem, placeat ratione quam aliquam voluptatum sed.
-			Officia recusandae ad, sequi iusto quos eius aliquid praesentium, maiores itaque, ullam quaerat voluptatem
-			culpa non dolorem? Est non possimus id? Earum sunt incidunt quod dignissimos tenetur obcaecati molestias
-			enim, provident officia. Nulla aut deleniti animi harum ab dolor, aliquam ea qui nobis fugiat rerum repellat
-			debitis corporis exercitationem dolores veritatis sequi ipsa aliquid voluptatem sapiente porro! Atque nam
-			deserunt vero consequatur eveniet, sapiente, dolorem rem fuga sed cupiditate pariatur. Distinctio, deserunt!
-			Asperiores deserunt amet aliquid repellendus eius sunt inventore at, vero, consectetur obcaecati, laboriosam
-			accusamus. Accusamus corrupti minus est dolore? Corrupti enim totam ab, officia dolorem neque deserunt
-			voluptatem quas eveniet distinctio reprehenderit officiis! Dolore consequatur blanditiis, aliquid numquam
-			error id laudantium. Velit inventore magni error autem! Eveniet blanditiis officiis fugit quam minima
-			eligendi id. Blanditiis sint veniam pariatur perspiciatis dolore delectus, architecto, molestias autem
-			commodi ipsum ratione magnam. Dolor, officia adipisci. Dolorum earum eveniet inventore sit rerum maiores
-			sequi a nobis enim excepturi distinctio itaque natus perferendis, consequatur sed odit! Doloremque
-			praesentium cum deleniti ad dignissimos, aspernatur officia ipsum ullam dicta ipsam natus voluptatum velit
-			adipisci molestias! Eligendi, at animi alias, maiores rerum dicta recusandae exercitationem, ad dolores
-			deleniti ratione molestias. Omnis sunt, temporibus quos iure similique excepturi, consectetur ullam ut
-			explicabo sequi harum molestiae nobis, reprehenderit eligendi alias vel? Tempora, deserunt similique. Eaque
-			assumenda delectus harum iusto tempore eligendi non exercitationem quae autem vitae sint at sequi,
-			voluptatibus, perferendis corrupti nemo praesentium aperiam consectetur id repellat voluptatem maiores! Enim
-			sunt veniam fuga exercitationem repellat nemo deleniti inventore vel pariatur culpa, quas distinctio iure
-			voluptate non aut nulla illo natus aspernatur. Rem voluptatem aperiam ipsum alias dolore veniam nesciunt
-			sequi sapiente maiores omnis quibusdam laboriosam voluptates provident, placeat quam et, reprehenderit odio,
-			non molestias vitae!</p>
-	</section>
+					navLinks.forEach((link) => {
+						link.classList.add("white-color");
+					});
 
+					cartshop.removeAttribute("fill");
+					cartshop.setAttribute("fill", "#fff");
 
+					person.removeAttribute("fill");
+					person.setAttribute("fill", "#fff");
 
+					login.classList.add("text-white", "btn-outline-light");
+					login.classList.remove("btn-outline-dark");
+				} else if (window.scrollY < 60) {
+					navEl.classList.remove("navbar-scrolled");
+					navEl.classList.add("mt-5", "rounded-5", "mx-5");
 
-	<footer></footer>
+					navBrand.classList.remove("white-color");
 
+					navLinks.forEach((link) => {
+						link.classList.remove("white-color");
+					});
 
+					cartshop.removeAttribute("fill");
+					cartshop.setAttribute("fill", "#010C8E");
 
+					person.removeAttribute("fill");
+					person.setAttribute("fill", "#010C8E");
 
+					login.classList.remove("text-white", "btn-outline-light");
+					login.classList.add("btn-outline-dark");
+				}
+			});
+		</script>
 
-	<script>
-		const navEl = document.querySelector(".navbar");
-		const navBrand = document.querySelector(".navbar-brand")
-		const navLinks = document.querySelectorAll(".nav-link");
-		const navLink = document.querySelector(".navbar-nav a:nth-child(1)");
-		const cartshop = document.querySelector(".cart-shop")
-		const login = document.querySelector(".login")
-		// const search = document.querySelector(".btn-search");
-
-		window.addEventListener('scroll', () => {
-			if (window.scrollY >= 60) {
-				navEl.classList.add("navbar-scrolled");
-				navEl.classList.remove("mt-5", "rounded-5", "mx-5");
-
-				navBrand.classList.add("white-color");
-
-				navLink.classList.add("fw-bold");
-
-				navLinks.forEach(link => {
-					link.classList.add("white-color");
-				});
-
-				cartshop.removeAttribute("fill")
-				cartshop.setAttribute("fill", "#fff")
-
-				login.classList.add("text-white", "btn-outline-light")
-				login.classList.remove("btn-outline-dark")
-
-				// search.classList.remove("btn-outline-dark")
-				// search.classList.add("text-white","btn-outline-light");
-
-			} else if (window.scrollY < 60) {
-				navEl.classList.remove("navbar-scrolled");
-				navEl.classList.add("mt-5", "rounded-5", "mx-5");
-
-				navBrand.classList.remove("white-color");
-
-				navLinks.forEach(link => {
-					link.classList.remove("white-color");
-				});
-
-				login.classList.remove("text-white", "btn-outline-light")
-				login.classList.add("btn-outline-dark")
-
-				cartshop.removeAttribute("fill")
-				cartshop.setAttribute("fill", "#010C8E")
-				// search.classList.remove("text-white","btn-outline-light");
-				// search.classList.add("btn-outline-dark");
-			}
-		})
-	</script>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
+	</body>
 </html>
