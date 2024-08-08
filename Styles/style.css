@@ -27,7 +27,7 @@
 
 body {
     font-family: "ubuntu";
-
+    /* background-color: #00897B; */
 }
 
 
@@ -90,10 +90,15 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 
+    /* height: 100vh;
+    background: url(../pics/banner/1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    align-items: center; */
 
 
-
-.starting-banner {
+/* .starting-banner {
     min-height: 100vh;
     background: url("/Images/fca58f4fa5f3c8fc666ef47d54f45cb1.jfif") no-repeat;
     background-position: center;
@@ -102,7 +107,17 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     width: auto;
     color: #fff;
     
+} */
+.starting-banner {
+  height: calc(100vh + 20vh);
+  background: url("/Images/پس\ زمینه\ اول.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
 }
+
+
 .search_box{
     max-width: 500px;
     width: 100%;
@@ -184,9 +199,36 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   background-position: center;
   background-size: 100%;
 }
-.email-svg {
-  transform: rotate(-45deg);
+
+
+
+
+
+
+.card-custom {
+  transition: transform 0.2s; /* انیمیشن برای بزرگ شدن کارت */
 }
+
+.card-custom:hover {
+  transform: scale(1.05); /* بزرگ شدن کارت هنگام هاور */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #616161; /* رنگ آیکون‌ها */
+    border-radius: 20%; 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
