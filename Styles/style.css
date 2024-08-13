@@ -17,6 +17,18 @@
         url(../Fonts/Signika-Regular.ttf),
         url(../Fonts/Signika-SemiBold.ttf);
 }
+@font-face {
+  font-family: "Peyda";
+  src: url(../Fonts/Peyda-Black[@mimvid].ttf),
+        url(../Fonts/Peyda-Bold[@mimvid].ttf),
+        url(../Fonts/Peyda-ExtraBold[@mimvid].ttf),
+        url(../Fonts/Peyda-ExtraLight[@mimvid].ttf),
+        url(../Fonts/Peyda-Light[@mimvid].ttf),
+        url(../Fonts/Peyda-Medium[@mimvid].ttf),
+        url(../Fonts/Peyda-Regular[@mimvid].ttf),
+        url(../Fonts/Peyda-SemiBold[@mimvid].ttf),
+        url(../Fonts/Peyda-Thin[@mimvid].ttf);
+}
 
 *,
 *::before,
@@ -24,29 +36,49 @@
     margin: 0;
     padding: 0;
 }
+:root {
+  --primary: #010c8e;
+  --bg-color: #eff3ff
+}
+
+
 
 body {
     font-family: "ubuntu";
-    /* background-color: #00897B; */
+    background-color: var(--bg-color);
+    color: var(--primary);
 }
 
 
 
 
-
-
+.white-color {
+  color: var(--bg-color) !important;
+}
+.primary-color {
+  color: var(--primary) !important;
+}
+.bg-color-primary {
+  background-color: var(--primary);
+}
+.bg-color-bg {
+  background-color: var(--bg-color);
+}
 
 
 
 
 nav {
-    color: #010C8E;
+    color: var(--primary);
 }
 nav .navbar-brand,
 nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: inherit;
-}
-.brand {
+  }
+  .navbar-brand{
+  margin: 0;
+  }
+  .brand {
     gap: 10px;
 }
 
@@ -55,12 +87,10 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     background-color: #FFFFFF73;
 }
 .navbar-scrolled {
-    background-color: #0D47A1 !important;
+    background-color: var(--primary) !important;
     box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
 }
-.white-color {
-    color: white !important;
-}
+
 
 .navbar-nav .nav-item .nav-link {
   position: relative;
@@ -74,7 +104,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #010C8E;
+  background-color: var(--primary);
   transition: all 0.3s ease;
 }
 
@@ -90,31 +120,29 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 
-    /* height: 100vh;
-    background: url(../pics/banner/1.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: auto;
-    align-items: center; */
-
-
-/* .starting-banner {
-    min-height: 100vh;
-    background: url("/Images/fca58f4fa5f3c8fc666ef47d54f45cb1.jfif") no-repeat;
-    background-position: center;
-    background-origin: border-box;
-    background-size: 100%;
-    width: auto;
-    color: #fff;
     
-} */
 .starting-banner {
   height: calc(100vh + 20vh);
-  background: url("/Images/پس\ زمینه\ اول.png") no-repeat;
+  background: url("/Images/starting-banner-w.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
+  display: flex;
   align-items: center;
+  position: relative;
+} 
+.starting-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 10rem;
+  width: 100%;
+  height: 20vh;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 265"><path fill="%23eff3ff" fill-opacity="1" d="M0,64L26.7,80C53.3,96,107,128,160,117.3C213.3,107,267,53,320,64C373.3,75,427,149,480,160C533.3,171,587,117,640,106.7C693.3,96,747,128,800,144C853.3,160,907,160,960,154.7C1013.3,149,1067,139,1120,133.3C1173.3,128,1227,128,1280,122.7C1333.3,117,1387,107,1413,101.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>') no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
 
@@ -155,7 +183,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     height: 50px;
     text-align: center;
     line-height: 50px;
-    color: #010C8E;
+    color: var(--primary);
     border-radius: 25px;
   
   }
@@ -165,7 +193,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   #check:checked ~ .search_box_content label{
     border-radius: 0 25px 25px 0;
     max-width: 60px;
-    background-color: #010C8E;
+    background-color: var(--primary);
     color: #fff;
   }
 
@@ -173,24 +201,37 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 
-
+.under-container{
+  margin-top: -12rem;
+}
 
 .under-banner {
-  background-color: #B0BEC596;
+  padding: 1.5rem 6rem !important;
+  text-wrap: nowrap;
+  z-index: 1;
+  background-color: #eff3ffe3;
+  width: fit-content;
 }
-.why-bg {
+/* .why-bg {
   background: url("/Images/wave\ \(2\)\ 1\ \(1\).png") no-repeat;
   background-size: 100%;
   margin-top: -8.55rem;
-}
-.question {
-  background: url("/Images/Rectangle\ 16.png");
+} */
+.que {
+  background: url("/Images/Rectangle\ 991.png") no-repeat;
+  height: 90vh;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   width: auto;
 }
+.questioni{
+  margin-top: 17rem;
+}
 
-
+.question-box{
+  /* margin-top: 7rem; */
+  height: 5rem;
+}
 
 
 
@@ -214,10 +255,31 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #616161; 
+    border-radius: 20%; 
+} */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #616161; /* رنگ آیکون‌ها */
-    border-radius: 20%; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon {
+    left: -60px; /* Adjust this value based on your design */
+}
+
+.carousel-control-next-icon {
+    right: -60px; /* Adjust this value based on your design */
 }
 
 
@@ -233,12 +295,13 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 
-
 .footer {
-  background: url('/Images/پس\ فوتر.png') no-repeat;
-  background-position: center;
-  background-size: 100%;
-  width: auto;
+  background: url('/Images/footer-bg.png') no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  /* padding-top: 10rem; */
+  align-items: center;
+  width: 100%;
   color: #fff;
 }
 .footer .footer-title {
@@ -271,18 +334,17 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   text-decoration: underline;
 }
 .subscribe-input {
-  border-radius: 20px 0 0 20px;
+  /* border-radius: 20px 0 0 20px; */
   border: none;
   padding: 10px;
-  background-color: #EEEEEE;
+  /* background-color: #EEEEEE; */
 }
 .subscribe-btn {
-  border-radius: 0 20px 20px 0;
+  /* border-radius: 0 20px 20px 0; */
   border: none;
   padding: 10px 20px;
-  background-color: #00aaff;
-  color: #fff;
+
 }
 .subscribe-btn:hover {
-  background-color: #00897B;
+  /* background-color: #00897B; */
 }
