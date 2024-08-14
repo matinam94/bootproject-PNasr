@@ -42,11 +42,10 @@
 }
 
 
-
 body {
-    font-family: "ubuntu";
-    background-color: var(--bg-color);
-    color: var(--primary);
+  font-family: "ubuntu";
+  background-color: var(--bg-color);
+  color: var(--primary);
 }
 
 
@@ -59,30 +58,36 @@ body {
   color: var(--primary) !important;
 }
 .bg-color-primary {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
 }
 .bg-color-bg {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color) !important;
 }
 
 
 
 
 nav {
-    color: var(--primary);
+  color: var(--primary);
 }
 nav .navbar-brand,
 nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: inherit;
   }
+nav .dropdown-toggle::after {
+    display: none !important; 
+  }
   .navbar-brand{
-  margin: 0;
+    margin: 0;
   }
   .brand {
     gap: 10px;
+  }
+  .navbar-nav.mb-2.mb-lg-0.justify-content-between.align-items-center li a {
+    text-decoration: none;
 }
-
-.navbar {
+  
+  .navbar {
     transition: all 1s;
     background-color: #FFFFFF73;
 }
@@ -232,6 +237,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 .question-form {
+  height: 100vh;
   background: url("/front-end/home\ page/Images/Rectangle\ 51.jpg") no-repeat;
   background-position: center;
   background-size: 100%;
