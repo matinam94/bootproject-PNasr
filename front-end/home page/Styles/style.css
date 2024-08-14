@@ -1,33 +1,33 @@
 @font-face {
     font-family: "ubuntu";
-    src: url(../Fonts/Ubuntu-Medium.ttf),
-        url(../Fonts/Ubuntu-MediumItalic.ttf),
-        url(../Fonts/Ubuntu-Bold.ttf),
-        url(../Fonts/Ubuntu-BoldItalic.ttf),
-        url(../Fonts/Ubuntu-Light.ttf),
-        url(../Fonts/Ubuntu-LightItalic.ttf),
-        url(../Fonts/Ubuntu-Regular.ttf),
-        url(../Fonts/Ubuntu-Italic.ttf);
+    src: url(/front-end/Fonts/Ubuntu-Medium.ttf),
+        url(/front-end/Fonts/Ubuntu-MediumItalic.ttf),
+        url(/front-end/Fonts/Ubuntu-Bold.ttf),
+        url(/front-end/Fonts/Ubuntu-BoldItalic.ttf),
+        url(/front-end/Fonts/Ubuntu-Light.ttf),
+        url(/front-end/Fonts/Ubuntu-LightItalic.ttf),
+        url(/front-end/Fonts/Ubuntu-Regular.ttf),
+        url(/front-end/Fonts/Ubuntu-Italic.ttf);
 }
 @font-face {
     font-family: "Signika";
-    src: url(../Fonts/Signika-Bold.ttf),
-        url(../Fonts/Signika-Light.ttf),
-        url(../Fonts/Signika-Medium.ttf),
-        url(../Fonts/Signika-Regular.ttf),
-        url(../Fonts/Signika-SemiBold.ttf);
+    src: url(/front-end/Fonts/Signika-Bold.ttf),
+        url(/front-end/Fonts/Signika-Light.ttf),
+        url(/front-end/Fonts/Signika-Medium.ttf),
+        url(/front-end/Fonts/Signika-Regular.ttf),
+        url(/front-end/Fonts/Signika-SemiBold.ttf);
 }
 @font-face {
   font-family: "Peyda";
-  src: url(../Fonts/Peyda-Black[@mimvid].ttf),
-        url(../Fonts/Peyda-Bold[@mimvid].ttf),
-        url(../Fonts/Peyda-ExtraBold[@mimvid].ttf),
-        url(../Fonts/Peyda-ExtraLight[@mimvid].ttf),
-        url(../Fonts/Peyda-Light[@mimvid].ttf),
-        url(../Fonts/Peyda-Medium[@mimvid].ttf),
-        url(../Fonts/Peyda-Regular[@mimvid].ttf),
-        url(../Fonts/Peyda-SemiBold[@mimvid].ttf),
-        url(../Fonts/Peyda-Thin[@mimvid].ttf);
+  src: url(/front-end/Fonts/Peyda-Black[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-Bold[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-ExtraBold[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-ExtraLight[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-Light[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-Medium[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-Regular[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-SemiBold[@mimvid].ttf),
+        url(/front-end/Fonts/Peyda-Thin[@mimvid].ttf);
 }
 
 *,
@@ -123,7 +123,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     
 .starting-banner {
   height: calc(100vh + 20vh);
-  background: url("/Images/starting-banner-w.jpg") no-repeat;
+  background: url("/front-end/home\ page/Images/starting-banner-w.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -218,7 +218,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   margin-top: -8.55rem;
 } */
 .que {
-  background: url("/Images/Rectangle\ 991.png") no-repeat;
+  background: url("/front-end/home\ page/Images/Rectangle\ 991.png") no-repeat;
   height: 90vh;
   background-position: center;
   background-size: cover;
@@ -236,7 +236,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 .question-form {
-  background: url("/Images/Rectangle\ 51.jpg") no-repeat;
+  background: url("/front-end/home\ page/Images/Rectangle\ 51.jpg") no-repeat;
   background-position: center;
   background-size: 100%;
 }
@@ -296,7 +296,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 .footer {
-  background: url('/Images/footer-bg.png') no-repeat;
+  background: url('/front-end/home\ page/Images/footer-bg.png') no-repeat;
   background-size: cover;
   background-position: fixed;
   /* padding-top: 10rem; */
