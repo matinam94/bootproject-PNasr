@@ -212,11 +212,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   background-color: #eff3ffe3;
   width: fit-content;
 }
-/* .why-bg {
-  background: url("/Images/wave\ \(2\)\ 1\ \(1\).png") no-repeat;
-  background-size: 100%;
-  margin-top: -8.55rem;
-} */
+
 .que {
   background: url("/front-end/home\ page/Images/Rectangle\ 991.png") no-repeat;
   height: 90vh;
@@ -255,11 +251,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #616161; 
-    border-radius: 20%; 
-} */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     position: absolute;
@@ -299,7 +291,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   background: url('/front-end/home\ page/Images/footer-bg.png') no-repeat;
   background-size: cover;
   background-position: fixed;
-  /* padding-top: 10rem; */
+  padding-top: 2rem;
   align-items: center;
   width: 100%;
   color: #fff;

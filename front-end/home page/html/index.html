@@ -50,8 +50,28 @@
 						</li>
 					</ul>
 
-					<ul class="navbar-nav  mb-2 mb-lg-0 justify-content-between align-items-center"
-						style="width: 175px">
+					<ul class="navbar-nav  mb-2 mb-lg-0 justify-content-between align-items-center">
+						<li>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								  Search
+								</button>
+								<ul class="dropdown-menu">
+								  <li><a class="dropdown-item" href="#">
+										<div class="search_box">
+											<input type="checkbox" id="check" hidden />
+											<div class="search_box_content">
+												<input type="text" placeholder="Type here then press Enter" />
+												<label for="check">
+													<i class="fa fa-search"></i>
+												</label>
+											</div>
+										</div>
+								  </a></li>
+								  
+								</ul>
+							</div>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="#">
 								<svg width="24" height="24" stroke="5" viewBox="0 0 24 24" fill="none"
@@ -62,13 +82,13 @@
 								</svg>
 							</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
 								class="bi bi-person" viewBox="0 0 16 16">
 								<path class="person"
 									d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
 							</svg>
-						</li>
+						</li> -->
 						<li class="nav-item">
 							<a class="btn login bg-color-primary white-color rounded-5" href="#">Login</a>
 						</li>
@@ -85,14 +105,12 @@
 			<div class="row justify-content-between align-items-center">
 				<div class="col-md-7">
 					<p class="fs-1 pb-5 m-0 fw-bold white-color">Experience the Future: INNOWATER</p>
-
 				</div>
 			</div>
 			<div class="row justify-content-between align-items-center">
 				<div class="col-md-5">
 					<p class="fs-3 m-0 white-color">Don't settle for ordinary. Embrace the extraordinary with INNOWATER.
 						It's not just a device; it's a water revolution. </p>
-
 				</div>
 			</div>
 		</div>
@@ -300,51 +318,64 @@
 	</section> -->
 	<section class="why-bg">
 		<div class="container">
-			<div class="row text-center my-5 question-title">
+			<div class="row text-center mt-5 question-title">
 				<div class="col-12">
 					<h5 class="d-inline py-4 fs-3 border-top border-bottom border-2 border-dark-subtle">Question
 						question?</h5>
 				</div>
 			</div>
 
-			<div class="container d-flex que align-items-center text-center question">
+			<div id="accordionParent" class="container d-flex que align-items-center text-center question">
 				<div class="col-md-5 pe-5">
 					<div class="accordion" id="accordionExample">
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 									1. What is a water absorption device from the air?
 								</button>
 							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+								data-bs-parent="#accordionParent">
 								<div class="accordion-body">
-									A water absorption device from the air is a system designed to extract moisture from the atmosphere and convert it into drinkable water. These devices typically use advanced materials and technologies to capture and condense water vapor from the air.
+									A water absorption device from the air is a system designed to extract moisture from
+									the atmosphere and convert it into drinkable water. These devices typically use
+									advanced materials and technologies to capture and condense water vapor from the
+									air.
 								</div>
 							</div>
 						</div>
 						<div class="accordion-item my-5">
 							<h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 									2. How does the water absorption device work?
 								</button>
 							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#accordionParent">
 								<div class="accordion-body">
-									The device works by using adsorbent materials that attract and hold moisture from the air. When the material is heated, the moisture is released and condensed into liquid water. Some systems use solar energy to power this process, making it energy-efficient and sustainable.
+									The device works by using adsorbent materials that attract and hold moisture from
+									the air. When the material is heated, the moisture is released and condensed into
+									liquid water. Some systems use solar energy to power this process, making it
+									energy-efficient and sustainable.
 								</div>
 							</div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingThree">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 									3. What are the benefits of using a water absorption device?
 								</button>
 							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+								data-bs-parent="#accordionParent">
 								<div class="accordion-body text-start">
 									<p>- Provides a reliable source of clean water, especially in arid regions.</p>
 									<p>- Reduces dependency on traditional water sources.</p>
-									<p>- Environmentally friendly, often using renewable energy sources like solar power.</p>
+									<p>- Environmentally friendly, often using renewable energy sources like solar
+										power.</p>
 									<p>- Can be used in remote areas with limited access to water infrastructure.</p>
 								</div>
 							</div>
@@ -357,47 +388,60 @@
 				<div class="col-md-5 ps-5">
 					<div class="accordion" id="accordionExample2">
 						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+							<h2 class="accordion-header" id="headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
 									4. How much water can the device produce daily?
 								</button>
 							</h2>
-							<div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+								data-bs-parent="#accordionParent">
 								<div class="accordion-body">
-									The amount of water produced depends on the device's design and the environmental conditions. Some devices can produce several liters of water per day, while larger systems may produce more. Factors such as humidity levels and temperature also affect water output.
+									The amount of water produced depends on the device's design and the environmental
+									conditions. Some devices can produce several liters of water per day, while larger
+									systems may produce more. Factors such as humidity levels and temperature also
+									affect water output.
 								</div>
 							</div>
 						</div>
 						<div class="accordion-item my-5">
-							<h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+							<h2 class="accordion-header" id="headingFive">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 									5. Is the water produced safe to drink?
 								</button>
 							</h2>
-							<div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+								data-bs-parent="#accordionParent">
 								<div class="accordion-body">
-									Yes, the water produced by these devices is typically safe to drink. The systems often include filtration and purification stages to ensure the water meets health and safety standards.
+									Yes, the water produced by these devices is typically safe to drink. The systems
+									often include filtration and purification stages to ensure the water meets health
+									and safety standards.
 								</div>
 							</div>
 						</div>
 						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingThree">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+							<h2 class="accordion-header" id="headingSix">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
 									6. What maintenance is required for the device?
 								</button>
 							</h2>
-							<div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+							<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+								data-bs-parent="#accordionParent">
 								<div class="accordion-body text-start">
-									Maintenance requirements vary by device, but generally include regular cleaning of the adsorbent materials and filters, checking for any mechanical issues, and ensuring the system is operating efficiently. Some devices may require periodic replacement of certain components.
+									Maintenance requirements vary by device, but generally include regular cleaning of
+									the adsorbent materials and filters, checking for any mechanical issues, and
+									ensuring the system is operating efficiently. Some devices may require periodic
+									replacement of certain components.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 		</div>
-	</section> 
+	</section>
 
 
 
