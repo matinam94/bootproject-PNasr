@@ -38,7 +38,7 @@
 }
 :root {
   --primary: #010c8e;
-  --bg-color: #eff3ff
+  --bg-color: #eff3ff;
 }
 
 
@@ -91,6 +91,7 @@ nav .dropdown-toggle::after {
 .navbar-scrolled {
     background-color: var(--primary) !important;
     box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
+    /* color: var(--bg-color) !important; */
 }
 .navbar-nav .nav-item .nav-link {
   position: relative;
@@ -103,7 +104,7 @@ nav .dropdown-toggle::after {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: var(--primary);
+  background-color: var(--bg-color);
   transition: all 0.3s ease;
 }
 .navbar-nav .nav-item .nav-link:hover::after {
@@ -111,7 +112,7 @@ nav .dropdown-toggle::after {
   left: 0;
 }
 .navbar-scrolled .navbar-nav .nav-item .nav-link::after {
-  background-color: white;
+  background-color: var(--bg-color);
 }
 
 
