@@ -45,7 +45,7 @@
 body {
   font-family: "ubuntu";
   background-color: var(--bg-color);
-  color: var(--primary);
+  color: var(--primary) !important;
   height: 100vh;
 }
 
@@ -86,24 +86,20 @@ nav .dropdown-toggle::after {
   }
   .navbar-nav.mb-2.mb-lg-0.justify-content-between.align-items-center li a {
     text-decoration: none;
-}
-  
+}  
   .navbar {
     transition: all 1s;
     background-color: #FFFFFF73;
 }
-.navbar-scrolled {
+  .navbar-scrolled {
     background-color: var(--primary) !important;
     box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
 }
-
-
-.navbar-nav .nav-item .nav-link {
+  .navbar-nav .nav-item .nav-link {
   position: relative;
   transition: color 0.3s ease;
 }
-
-.navbar-nav .nav-item .nav-link::after {
+  .navbar-nav .nav-item .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -113,13 +109,11 @@ nav .dropdown-toggle::after {
   background-color: var(--primary);
   transition: all 0.3s ease;
 }
-
-.navbar-nav .nav-item .nav-link:hover::after {
+  .navbar-nav .nav-item .nav-link:hover::after {
   width: 100%;
   left: 0;
 }
-
-.navbar-scrolled .navbar-nav .nav-item .nav-link::after {
+  .navbar-scrolled .navbar-nav .nav-item .nav-link::after {
   background-color: white;
 }
 
@@ -135,121 +129,68 @@ nav .dropdown-toggle::after {
   padding: 50px 0;
   text-align: center;  
 }    
-
 .contacts h1 {
   font-size: 60px;
   margin-top: 200px;
   margin-bottom: 50px;
 }
 
-.card:hover {
+.row-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards:hover {
   transform: translateY(-10px);
 }
 
-
-.custom-cardt {
-  position: relative;
-  background-color: #f0f4ff;
-  border: 2px solid #0033cc;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  margin: 50px auto;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.cards2 {
+  background: url("../Images/telegram.png") no-repeat;
+}
+.cards3 {
+  background: url("../Images/telephon.png") no-repeat;
+}
+.cards1 {
+  background: url("../Images/g\ mail.png") no-repeat;
+}
+.cards {
+  background-position: center;
+  width: 25rem;
+  height: 21rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.custom-cardt::before {
-  content: '';
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
-  background-color: #f0f4ff;
-  border: 2px solid #0033cc;
-  border-radius: 50%;
-  z-index: 1;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.custom-cardt .icon {
-  font-size: 40px;
-  color: #0033cc;
-  position: relative;
-  z-index: 2;
-}
-
-.custom-cardt-content {
-  margin-top: 30px;
-  font-size: 16px;
-  color: #0033cc;
-}
-
-.custom-cardt .icon-text {
-  font-size: 40px;
-  position: absolute;
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
+.content {
+  margin-top: 10rem;
+  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 
+
+.under-contact-cards {
+  padding-bottom: 15rem !important;
+}
 
 
 .footer {
-  background: url('/front-end/home\ page/Images/footer-bg.png') no-repeat;
-  background-size: cover;
-  background-position: fixed;
-  padding-top: 2rem;
-  align-items: center;
-  width: 100%;
-  color: #fff;
+  background-color: var(--primary);
+  /* padding-top: 1rem; */
 }
-.footer .footer-title {
-  font-family: 'Cursive', sans-serif;
-  font-size: 24px;
-}
-.footer .footer-column {
-  margin-bottom: 20px;
-}
-.footer .footer-links a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 5px;
-}
-.footer .footer-links a:hover {
-  text-decoration: underline;
-}
-.footer .footer-bottom {
-  border-top: 1px solid #fff;
-  padding-top: 10px;
-  text-align: center;
-}
-.footer .footer-bottom a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-.footer .footer-bottom a:hover {
-  text-decoration: underline;
-}
-.subscribe-input {
-  /* border-radius: 20px 0 0 20px; */
-  border: none;
-  padding: 10px;
-  /* background-color: #EEEEEE; */
-}
-.subscribe-btn {
-  /* border-radius: 0 20px 20px 0; */
-  border: none;
-  padding: 10px 20px;
 
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
-.subscribe-btn:hover {
-  /* background-color: #00897B; */
+.icons .row .d-flex{
+  gap: 2rem;
 }
