@@ -51,7 +51,9 @@ body {
 }
 
 
-
+.height {
+  height: 15px !important;
+}
 
 .white-color {
   color: var(--bg-color) !important;
@@ -124,22 +126,62 @@ nav .dropdown-toggle::after {
 
 
 
-.container-changed {
-  margin: 0 3rem;
-}  
-.top {
-  margin-top: 12rem;
-}
-
-
-.border-primary-color {
+.border-2px-primary {
   border: 2px solid var(--primary) !important;
   padding: 0.7rem 0.9rem;
 }
-.border-bot-primary-color {
+.border-2px-white {
+  border: 2px solid var(--bg-color) !important;
+  padding: 0.7rem 0.9rem;
+}
+.border-primary-color {
   border-color: var(--primary) !important;
-
+}
+.border-white-color {
+  border-color: var(--bg-color) !important;
 }
 .bg-trans {
   background-color: transparent !important;
 }
+.f-l {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+
+
+.container-changed {
+  margin: 0 3rem;
+} 
+
+.top {
+  margin-top: 12rem;
+}
+
+.radio-lg {
+  scale: 1.7;
+}
+
+
+
+.form-floating > input:not(:focus):placeholder-shown + label {
+  background: transparent;
+}
+
+.form-floating > input + label:after {
+ background: transparent !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
