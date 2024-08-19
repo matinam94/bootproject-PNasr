@@ -112,7 +112,7 @@ nav .dropdown-toggle::after {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: var(--primary);
+  background-color: var(--bg-color);
   transition: all 0.3s ease;
 }
 .navbar-nav .nav-item .nav-link:hover::after {
@@ -120,7 +120,7 @@ nav .dropdown-toggle::after {
   left: 0;
 }
 .navbar-scrolled .navbar-nav .nav-item .nav-link::after {
-  background-color: white;
+  background-color: var(--bg-color);
 }
 
 
