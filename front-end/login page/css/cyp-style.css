@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "ubuntu";
+	background-color: var(--color-bgcolor) !important;
+	color: var(--primary) !important;
+}
+
+.navigation-container {
+	margin-left: 30px !important;
+	margin-right: 30px !important;
+}
+
+nav {
+	color: var(--primary);
+	backdrop-filter: blur(3px);
+}
+
+nav .navbar-brand,
+nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+	color: inherit;
+}
+
+.navbar-brand {
+	font-family: "peyda";
+	margin: 0;
+}
+
+.brand {
+	gap: 10px;
+}
+
+.navbar {
+	transition: all 1s;
+	background-color: #ffffff73;
+}
+
+.navbar-scrolled {
+	background-color: var(--primary) !important;
+	box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
+}
+
+.nav-links .nav-item .nav-link {
+	position: relative;
+	transition: color 0.3s ease;
+  }
+  
+  .nav-links .nav-item .nav-link::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background-color: var(--primary);
+	transition: all 0.3s ease;
+  }
+  
+  .nav-links .nav-item .nav-link:hover::after {
+	width: 100%;
+	left: 0;
+  }
+  
+  .navbar-scrolled .navbar-nav .nav-item .nav-link::after {
+	background-color: var(--color-bgcolor);
+  }
+
+/* banner */
+.banner {
+	background: url("../img/login-bg.jpg") no-repeat;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+
+.welcome {
+	font-family: "Inter-black";
+	font-size: 50px;
+}
+
+.inno {
+	font-family: "Inter-black";
+	font-size: 70px !important;
+	font-weight: bolder !important;
+}
+
+.input-styles {
+	border: 2px solid var(--primary) !important;
+	background-color: transparent !important;
+}
+
+/* query */
+@media screen and (max-width: 1370px){
+	.change-password h2 {
+		font-size: 1.5rem !important;
+		margin-bottom: 1rem !important;
+	}
+	.change-password form #email {
+		height: 1px !important;
+		/* width: px !important; */
+	}
+}
+
+
+/* font */
+@font-face {
+	font-family: "ubuntu";
+	src: url(../../font/Ubuntu-Medium.ttf),
+		url(../../font/Ubuntu-MediumItalic.ttf), url(../../font/Ubuntu-Bold.ttf),
+		url(../../font/Ubuntu-BoldItalic.ttf), url(../../font/Ubuntu-Light.ttf),
+		url(../../font/Ubuntu-LightItalic.ttf),
+		url(../../font/Ubuntu-Regular.ttf), url(../../font/Ubuntu-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Signika";
+	src: url(../../font/Signika-Bold.ttf), url(../../font/Signika-Light.ttf),
+		url(../../font/Signika-Medium.ttf), url(../../font/Signika-Regular.ttf),
+		url(../../font/Signika-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: "Peyda";
+	src: url(../../font/Peyda-Black[@mimvid].ttf),
+		url(../../font/Peyda-Bold[@mimvid].ttf),
+		url(../../font/Peyda-ExtraBold[@mimvid].ttf),
+		url(../../font/Peyda-ExtraLight[@mimvid].ttf),
+		url(../../font/Peyda-Light[@mimvid].ttf),
+		url(../../font/Peyda-Medium[@mimvid].ttf),
+		url(../../font/Peyda-Regular[@mimvid].ttf),
+		url(../../font/Peyda-SemiBold[@mimvid].ttf),
+		url(../../font/Peyda-Thin[@mimvid].ttf);
+}
+
+@font-face {
+	font-family: "Inter-black";
+	src: url(../../font/Inter_18pt-Black.ttf);
+}
+
+/* root colors */
+:root {
+	--color-bgcolor: #eff3ff;
+	--primary: #010c8e;
+	--primary-low: #010c8e80;
+}
+
+/* colors */
+.primary-color {
+	color: var(--primary) !important;
+}
+
+.primary-color-low {
+	color: var(--primary-low) !important;
+}
+
+.white-color {
+	color: var(--color-bgcolor) !important;
+}
+
+/* background colors */
+.bg-color-primary {
+	background-color: var(--primary) !important;
+}
+
+.bg-color-bg {
+	background-color: var(--color-bgcolor) !important;
+}
