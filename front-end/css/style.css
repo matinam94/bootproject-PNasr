@@ -38,7 +38,8 @@
 }
 :root {
   --primary: #010c8e;
-  --bg-color: #eff3ff
+  --bg-color: #eff3ff;
+  --bg-color-80: #eff3ff80;
 }
 
 
@@ -54,11 +55,17 @@ body {
 .white-color {
   color: var(--bg-color) !important;
 }
+.white-80-color{
+  color: var(--bg-color-80);
+}
 .primary-color {
   color: var(--primary) !important;
 }
 .bg-color-primary {
   background-color: var(--primary) !important;
+}
+.bg-color-bg-80 {
+  background-color: var(--bg-color-80) !important;
 }
 .bg-color-bg {
   background-color: var(--bg-color) !important;
@@ -66,19 +73,21 @@ body {
 .bg-trans {
   background-color: transparent !important;
 }
-.nav-bg {
-  background-color: #FFFFFF73 !important;
-  border-top: none !important;
 
+
+
+.search-style {
+  border: none !important;
+  border-top: none !important;
   margin-top: 0.65rem !important;
-  backdrop-filter: blur(3px);
+  border-radius: 0 0 10px 10px !important;
 }
 
 
 
 nav {
-  color: var(--primary);
-  backdrop-filter: blur(3px);
+  color: var(--primary) !important;
+  background-color: #EFF3FF80 !important;
 }
 nav .navbar-brand,
 nav .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -103,7 +112,7 @@ nav .dropdown-toggle::after {
 }  
   .navbar {
     transition: all 1s;
-    background-color: #FFFFFF73;
+    background-color: #EFF3FF80;
 }
 .navbar-scrolled {
     background-color: var(--primary) !important;
@@ -134,6 +143,32 @@ nav .dropdown-toggle::after {
 
 .navbar-scrolled .navbar-nav .nav-item .nav-link::after {
   background-color: white;
+}
+
+
+
+.profile-dropdown{
+  max-width: 250px;
+}
+.profile-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.dropdown-center:hover>.dropdown-menu {
+  display: block;
+  position: absolute;
+  bottom: 100;
+  left: -300%;
+}
+.dropdown-center .dropdown-menu li a:active {
+  border-radius: 5px;
+  background-color: var(--primary) !important;
+  color: var(--bg-color) !important;
+}
+.dropdown-center>.dropdown-toggle:active {
+    pointer-events: none;
 }
 
 

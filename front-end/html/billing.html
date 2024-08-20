@@ -6,15 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-	
-
-
-
-	<link rel="stylesheet" href="../css/billing.css" />
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
 	<link rel="stylesheet" href="../css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/billing.css" />
+	
     <script src="../js/bootstrap.bundle.min.js"></script>
 	<title>InnoWater</title>
 </head>
@@ -56,29 +52,27 @@
 							<div class="dropdown">
 								<button id="searchDropdown" class="btn" type="button" data-bs-toggle="dropdown"
 									data-bs-auto-close="false" aria-expanded="false">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_2497_26400)">
-											<path class="search-icon"
-												d="M21 21L16.6569 16.6569M16.6569 16.6569C18.1046 15.2091 19 13.2091 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2091 19 15.2091 18.1046 16.6569 16.6569Z"
-												stroke="#eff3ff" stroke-width="2" stroke-linecap="round"
-												stroke-linejoin="round" />
+										<path class="search-icon" d="M21 21L16.6569 16.6569M16.6569 16.6569C18.1046 15.2091 19 13.2091 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2091 19 15.2091 18.1046 16.6569 16.6569Z" stroke="#eff3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</g>
 										<defs>
-											<clipPath id="clip0_2497_26400">
-												<rect width="24" height="24" fill="#eff3ff" />
-											</clipPath>
+										<clipPath id="clip0_2497_26400">
+										<rect width="24" height="24" fill="#eff3ff"/>
+										</clipPath>
 										</defs>
 									</svg>
 								</button>
-								<div class="dropdown-menu p-3 dropdown-menu-end" aria-labelledby="searchDropdown"
+								<div id="search-box" 
+								class="dropdown-menu search-style bg-color-primary p-3 dropdown-menu-end" 
+								aria-labelledby="searchDropdown"
 									style="width: 400px">
-									<form id="searchForm" action="your_search_url" method="GET">
+									<form  id="searchForm" action="your_search_url" method="GET">
 										<div class="input-group">
 											<input type="text" class="form-control" name="search"
 												placeholder="Write Here" aria-label="Search" />
 											<a href="">
-												<button class="btn bg-color-primary white-color" type="submit">
+												<button class="btn search-btn bg-color-bg primary-color" type="submit">
 													Search
 												</button>
 											</a>
@@ -119,7 +113,7 @@
 												</svg>
 											
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="#eff3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 												</svg>
 					
 										</button>
@@ -157,7 +151,7 @@
 
 
 	<main class="mx-3 pb-4">
-		<div class="container-changed">
+		<div class="container-changed w-75">
 			<div class="row top mb-5">
 				<div class="col-md-2">
 					<a class="d-inline" href="../../cart page/html/index.html">
@@ -360,7 +354,7 @@
 						</div>
 					</div>
 
-					<div class="row px-5 mt-3">
+					<div class="row  mt-3">
 						<div class="bg-color-primary white-color rounded-5 px-5 py-3 mB-5">
 							<div class="row mb-3">
 								<h6 class="fs-2 fw-bold">

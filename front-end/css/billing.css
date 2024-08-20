@@ -152,11 +152,16 @@ nav .dropdown-toggle::after {
 }
 
 
-
+.search-style {
+  border: none !important;
+  border-top: none !important;
+  margin-top: 0.65rem !important;
+  border-radius: 0 0 10px 10px !important;
+}
 
 
 .container-changed {
-  margin: 0 3rem !important;
+  margin: 0 auto !important;
 } 
 
 .top {
