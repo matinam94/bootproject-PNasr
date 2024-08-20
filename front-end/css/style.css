@@ -175,7 +175,7 @@ nav .dropdown-toggle::after {
     
 .starting-banner {
   height: calc(100vh + 20vh);
-  background: url("/front-end/home\ page/Images/starting-banner-w.jpg") no-repeat;
+  background: url("../img/starting-banner-w.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -212,7 +212,7 @@ nav .dropdown-toggle::after {
 }
 
 .que {
-  background: url("/front-end/home\ page/Images/Rectangle\ 991.png") no-repeat;
+  background: url("../img/Rectangle\ 991.png") no-repeat;
   height: 90vh;
   background-position: center;
   background-size: cover;
@@ -231,7 +231,7 @@ nav .dropdown-toggle::after {
 
 .question-form {
   height: 100vh;
-  background: url("/front-end/home\ page/Images/Rectangle\ 51.jpg") no-repeat;
+  background: url("../img/Rectangle\ 51.jpg") no-repeat;
   background-position: center;
   background-size: 100%;
 }
@@ -290,7 +290,7 @@ nav .dropdown-toggle::after {
 
 
 .footer {
-  background: url('/front-end/home\ page/Images/footer-bg.png') no-repeat;
+  background: url('../img/footer-bg.png') no-repeat;
   background-size: cover;
   background-position: fixed;
   padding-top: 2rem;

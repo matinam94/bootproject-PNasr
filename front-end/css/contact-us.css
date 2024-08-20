@@ -124,7 +124,7 @@ nav .dropdown-toggle::after {
 
 .contacts {
   height: 100vh;
-  background: url("../Images/Vector\ 4.png") no-repeat center center;
+  background: url("../img/Vector\ 4.png") no-repeat center center;
   background-size: cover;
   padding: 50px 0;
   text-align: center;  
@@ -147,13 +147,13 @@ nav .dropdown-toggle::after {
 }
 
 .cards2 {
-  background: url("../Images/telegram.png") no-repeat;
+  background: url("../img/telegram.png") no-repeat;
 }
 .cards3 {
-  background: url("../Images/telephon.png") no-repeat;
+  background: url("../img/telephon.png") no-repeat;
 }
 .cards1 {
-  background: url("../Images/g\ mail.png") no-repeat;
+  background: url("../img/g\ mail.png") no-repeat;
 }
 .cards {
   background-position: center;
