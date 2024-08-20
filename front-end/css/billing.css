@@ -47,13 +47,10 @@ body {
   font-family: "ubuntu";
   background-color: var(--bg-color);
   color: var(--primary);
-  height: 1000px;
+
 }
 
 
-.height {
-  height: 15px !important;
-}
 
 .white-color {
   color: var(--bg-color) !important;
@@ -97,14 +94,12 @@ nav .dropdown-toggle::after {
     transition: all 1s;
     background-color: #FFFFFF73;
 }
-#searchDropdown,#searchDropdown:active,#searchDropdown:focus{
-  border: none !important;
-  outline: none !important ;
-}
+#searchDropdown,#searchDropdown:active,#searchDropdown:focus,
 #UserDropdown,#UserDropdown:active,#UserDropdown:focus{
   border: none !important;
   outline: none !important ;
 }
+
 .navbar-scrolled {
     background-color: var(--primary) !important;
     box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
@@ -136,7 +131,7 @@ nav .dropdown-toggle::after {
 
 .border-2px-primary {
   border: 2px solid var(--primary) !important;
-  padding: 0.7rem 0.9rem;
+  padding: 0.75rem 1rem !important;
 }
 .border-2px-white {
   border: 2px solid var(--bg-color) !important;
@@ -187,7 +182,7 @@ nav .dropdown-toggle::after {
   bottom: 100;
   left: -300%;
 }
-.dropdown-menu li a:active {
+.dropdown-center .dropdown-menu li a:active {
   border-radius: 5px;
   background-color: var(--primary) !important;
   color: var(--bg-color) !important;
@@ -195,7 +190,9 @@ nav .dropdown-toggle::after {
 .dropdown-center>.dropdown-toggle:active {
     pointer-events: none;
 }
-
+textarea {
+  resize: none !important;
+}
 .form-floating > input:not(:focus):placeholder-shown + label {
   background: transparent;
 }
@@ -213,7 +210,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 

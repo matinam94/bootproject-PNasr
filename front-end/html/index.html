@@ -8,8 +8,8 @@
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
-	<link rel="stylesheet" href="../Styles/style.css" />
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../css/style.css" />
 	<title>InnoWater</title>
 </head>
 
@@ -25,24 +25,20 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-between" style="width: 550px">
+					<ul class="navbar-nav nav-links primary-color mx-auto mb-2 mb-lg-0 justify-content-between"
+						style="width: 550px">
 						<li class="nav-item">
-							<a class="nav-link fw-bold fst-italic active" aria-current="page" href="#">Home</a>
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">How it works</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About-Us</a>
-						</li>
-
 						<li class="nav-item">
 							<a class="nav-link" href="#">Shop</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/front-end/blog page/html/index.html">Blog</a>
+							<a class="nav-link" href="../../blog page/html/index.html">Blog</a>
 						</li>
-
+						<li class="nav-item">
+							<a class="nav-link" href="#">About-Us</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="../../contact-us page/html/index.html">Contact-Us</a>
 						</li>
@@ -64,15 +60,17 @@
 										</defs>
 									</svg>
 								</button>
-								<div class="dropdown-menu p-3 dropdown-menu-end" aria-labelledby="searchDropdown"
+								<div class="dropdown-menu nav-bg p-3 dropdown-menu-end" aria-labelledby="searchDropdown"
 									style="width: 400px">
-									<form id="searchForm" action="your_search_url" method="GET">
+									<form  id="searchForm" action="your_search_url" method="GET">
 										<div class="input-group">
 											<input type="text" class="form-control" name="search"
 												placeholder="Write Here" aria-label="Search" />
-											<button class="btn btn-primary" type="submit">
-												Search
-											</button>
+											<a href="">
+												<button class="btn search-btn bg-color-primary white-color" type="submit">
+													Search
+												</button>
+											</a>
 										</div>
 									</form>
 								</div>
@@ -791,6 +789,7 @@
 		const person = document.querySelector(".person");
 		const login = document.querySelector(".login");
 		const search = document.querySelector(".search-icon");
+		const search_btn = document.querySelector(".search-btn");
 
 		window.addEventListener("scroll", () => {
 			if (window.scrollY >= 60) {
@@ -805,6 +804,9 @@
 
 				search.removeAttribute("stroke");
 				search.setAttribute("stroke" ,"#eff3ff");
+
+				search_btn.classList.remove("bg-color-primary", "white-color")
+				search_btn.classList.add("bg-color-bg", "primary-color")
 
 				cartshop.removeAttribute("fill")
 				cartshop.setAttribute("fill" ,"#eff3ff")
@@ -833,9 +835,7 @@
 		});
 	</script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-	</script>
+	
 
 </body>
 
