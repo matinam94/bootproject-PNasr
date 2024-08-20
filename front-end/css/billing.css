@@ -172,9 +172,29 @@ nav .dropdown-toggle::after {
   scale: 1.7 !important;
 }
 
+.profile-dropdown{
+  max-width: 250px;
+}
+.profile-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
 
-
-
+.dropdown-center:hover>.dropdown-menu {
+  display: block;
+  position: absolute;
+  bottom: 100;
+  left: -300%;
+}
+.dropdown-menu li a:active {
+  border-radius: 5px;
+  background-color: var(--primary) !important;
+  color: var(--bg-color) !important;
+}
+.dropdown-center>.dropdown-toggle:active {
+    pointer-events: none;
+}
 
 .form-floating > input:not(:focus):placeholder-shown + label {
   background: transparent;

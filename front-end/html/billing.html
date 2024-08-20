@@ -4,12 +4,18 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	
 
-	<link rel="stylesheet" href="../Styles/style.css" />
+
+
+	<link rel="stylesheet" href="../css/billing.css" />
+
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
 	<title>InnoWater</title>
 </head>
 
@@ -17,7 +23,7 @@
 	<header class="mb-5">
 		<nav class="navbar navbar-expand-md navbar-light bg-color-primary fixed-top mt-5 mx-5 mw-75 rounded-5 shadow">
 			<div class="container">
-				<a class="navbar-brand white-color" href="#">InnoWater</a>
+				<a class="navbar-brand white-color" href="../../home page/html/index.html">InnoWater</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -64,13 +70,13 @@
 										</defs>
 									</svg>
 								</button>
-								<div class="dropdown-menu p-3 dropdown-menu-end" aria-labelledby="searchDropdown"
+								<div class="dropdown-menu p-3 dropdown-menu-end mt-2" aria-labelledby="searchDropdown"
 									style="width: 400px">
 									<form id="searchForm" action="your_search_url" method="GET">
 										<div class="input-group">
 											<input type="text" class="form-control" name="search"
 												placeholder="Write Here" aria-label="Search" />
-											<button class="btn btn-primary" type="submit">
+											<button class="btn bg-color-primary white-color" type="submit">
 												Search
 											</button>
 										</div>
@@ -79,8 +85,8 @@
 							</div>
 						</li>
 
-						<li class="nav-item me-3">
-							<a class="nav-link" aria-current="page" href="#">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../../cart page/html/index.html">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<path class="cart-shop" fill-rule="evenodd" clip-rule="evenodd"
@@ -91,25 +97,35 @@
 						</li>
 
 						<!-- login button -->
-						<li class="nav-item">
+						<li class="nav-item d-none ms-2">
 							<a class="login btn bg-color-bg primary-color rounded-5" id="login" href="#">Login</a>
 						</li>
 
 						<!-- user dropdown -->
-						<li>
-							<div class="dropdown">
-								<button id="UserDropdown" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-									aria-expanded="false" data-bs-auto-close="true" >
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										
-								</button>
-								<ul class="dropdown-menu p-3 dropdown-menu-end" aria-labelledby="UserDropdown"
-									style="width: 200px">
-									<li>
-										<a class="dropdown-item" href="#">
+						<li class="user-dropdown">
 
+							<div class="dropdown-center">
+								<div class="d-flex align-items-center">
+										<button id="UserDropdown" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"  
+											aria-expanded="false">
+
+											<svg class="me-2" width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.54199 1.10056L1.54199 38.1397" stroke="#eff3ff" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+											
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+					
+										</button>
+								</div>
+								<ul class="dropdown-menu profile-dropdown p-3 dropdown-menu-end" aria-labelledby="UserDropdown">
+									<li>
+										<a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+											
+											<img class="profile-avatar" src="../../accuount avatar/crocodile1.png" alt="">
+											
+											<p class="ms-3 mb-0 overflow-hidden">matin94dddddddddddddddddd</p>
 										</a>
 									</li>
 
@@ -511,8 +527,8 @@
 									<rect width="24" height="24" fill="#eff3ff" />
 								</clipPath>
 							</defs>
-							<p class="mb-0 d-inline text-nowrap">Continue to shopping</p>
 						</svg>
+						<p class="mb-0 d-inline text-nowrap">Continue to shopping</p>
 					</a>
 				</div>
 			</div>
