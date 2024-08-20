@@ -25,25 +25,20 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav white-color mx-auto mb-2 mb-lg-0 justify-content-between"
+					<ul class="navbar-nav nav-links white-color mx-auto mb-2 mb-lg-0 justify-content-between"
 						style="width: 550px">
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="../../home page/html/index.html">Home</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">How it works</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About-Us</a>
-						</li>
-
 						<li class="nav-item">
 							<a class="nav-link" href="#">Shop</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="../../blog page/html/index.html">Blog</a>
 						</li>
-
+						<li class="nav-item">
+							<a class="nav-link" href="#">About-Us</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="../../contact-us page/html/index.html">Contact-Us</a>
 						</li>
@@ -95,8 +90,40 @@
 							</a>
 						</li>
 
+						<!-- login button -->
 						<li class="nav-item">
 							<a class="login btn bg-color-bg primary-color rounded-5" id="login" href="#">Login</a>
+						</li>
+
+						<!-- user dropdown -->
+						<li>
+							<div class="dropdown">
+								<button id="UserDropdown" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+									aria-expanded="false" data-bs-auto-close="true" >
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										
+								</button>
+								<ul class="dropdown-menu p-3 dropdown-menu-end" aria-labelledby="UserDropdown"
+									style="width: 200px">
+									<li>
+										<a class="dropdown-item" href="#">
+
+										</a>
+									</li>
+
+									<li><hr class="dropdown-divider"></li>
+
+									<li><a class="dropdown-item" href="#">Orders</a></li>
+									<li><a class="dropdown-item" href="#">Tickets</a></li>
+									<li><a class="dropdown-item" href="#">Acount Details</a></li>
+
+									<li><hr class="dropdown-divider"></li>
+
+									<li><a class="dropdown-item" href="#">Log Out</a></li>
+								</ul>
+							</div>
 						</li>
 					</ul>
 				</div>

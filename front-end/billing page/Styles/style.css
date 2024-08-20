@@ -97,6 +97,14 @@ nav .dropdown-toggle::after {
     transition: all 1s;
     background-color: #FFFFFF73;
 }
+#searchDropdown,#searchDropdown:active,#searchDropdown:focus{
+  border: none !important;
+  outline: none !important ;
+}
+#UserDropdown,#UserDropdown:active,#UserDropdown:focus{
+  border: none !important;
+  outline: none !important ;
+}
 .navbar-scrolled {
     background-color: var(--primary) !important;
     box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
@@ -105,7 +113,7 @@ nav .dropdown-toggle::after {
   position: relative;
   transition: color 0.3s ease;
 }
-.navbar-nav .nav-item .nav-link::after {
+.nav-links .nav-item .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -115,7 +123,7 @@ nav .dropdown-toggle::after {
   background-color: var(--bg-color);
   transition: all 0.3s ease;
 }
-.navbar-nav .nav-item .nav-link:hover::after {
+.nav-links .nav-item .nav-link:hover::after {
   width: 100%;
   left: 0;
 }
@@ -153,15 +161,15 @@ nav .dropdown-toggle::after {
 
 
 .container-changed {
-  margin: 0 3rem;
+  margin: 0 3rem !important;
 } 
 
 .top {
-  margin-top: 12rem;
+  margin-top: 12rem !important;
 }
 
 .radio-lg {
-  scale: 1.7;
+  scale: 1.7 !important;
 }
 
 
