@@ -84,6 +84,11 @@ nav .dropdown-toggle::after {
   .navbar-nav.mb-2.mb-lg-0.justify-content-between.align-items-center li a {
     text-decoration: none;
 } 
+#searchDropdown,#searchDropdown:active,#searchDropdown:focus,
+#UserDropdown,#UserDropdown:active,#UserDropdown:focus{
+  border: none !important;
+  outline: none !important ;
+}
   .navbar {
     transition: all 1s;
     background-color: #FFFFFF73;
@@ -116,6 +121,13 @@ nav .dropdown-toggle::after {
 }
 
 
+
+.search-style {
+  border: none !important;
+  border-top: none !important;
+  margin-top: 0.65rem !important;
+  border-radius: 0 0 10px 10px !important;
+}
 
 
     

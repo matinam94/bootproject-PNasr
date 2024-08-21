@@ -1,3 +1,78 @@
+@font-face {
+	font-family: "ubuntu";
+	src: url(../Fonts/Ubuntu-Medium.ttf),
+		url(../Fonts/Ubuntu-MediumItalic.ttf), url(../Fonts/Ubuntu-Bold.ttf),
+		url(../Fonts/Ubuntu-BoldItalic.ttf), url(../Fonts/Ubuntu-Light.ttf),
+		url(../Fonts/Ubuntu-LightItalic.ttf),
+		url(../Fonts/Ubuntu-Regular.ttf), url(../Fonts/Ubuntu-Italic.ttf);
+}
+@font-face {
+	font-family: "Signika";
+	src: url(../Fonts/Signika-Bold.ttf), url(../Fonts/Signika-Light.ttf),
+		url(../Fonts/Signika-Medium.ttf), url(../Fonts/Signika-Regular.ttf),
+		url(../Fonts/Signika-SemiBold.ttf);
+}
+@font-face {
+	font-family: "Peyda";
+	src: url(../Fonts/Peyda-Black[@mimvid].ttf),
+		url(../Fonts/Peyda-Bold[@mimvid].ttf),
+		url(../Fonts/fontPeyda-ExtraBold[@mimvid].ttf),
+		url(../Fonts/Peyda-ExtraLight[@mimvid].ttf),
+		url(../Fonts/Peyda-Light[@mimvid].ttf),
+		url(../Fonts/Peyda-Medium[@mimvid].ttf),
+		url(../Fonts/Peyda-Regular[@mimvid].ttf),
+		url(../Fonts/Peyda-SemiBold[@mimvid].ttf),
+		url(../Fonts/Peyda-Thin[@mimvid].ttf);
+}
+@font-face {
+	font-family: "Inter-black";
+	src: url(../Fonts/Inter_18pt-Black.ttf);
+}
+
+
+
+:root {
+	--primary: #010c8e;
+	--primary-50: #010c8e50;
+  --bg-color: #eff3ff;
+  --bg-color-50: #eff3ff50;
+}
+
+
+
+
+.white-color {
+  color: var(--bg-color) !important;
+}
+.white-50-color{
+  color: var(--bg-color-50);
+}
+.primary-color {
+  color: var(--primary) !important;
+}
+.primary-50-color {
+  color: var(--primary) !important;
+}
+
+.bg-color-primary {
+  background-color: var(--primary) !important;
+}
+.bg-color-primary-50 {
+  background-color: var(--primary-50y) !important;
+}
+.bg-color-bg {
+  background-color: var(--bg-color) !important;
+}
+.bg-color-bg-50 {
+  background-color: var(--bg-color-50) !important;
+}
+.bg-trans {
+  background-color: transparent !important;
+}
+
+
+
+
 *,
 *::before,
 *::after {
@@ -11,6 +86,11 @@ body {
   background-color: var(--color-bgcolor) !important;
   color: var(--primary) !important;
 }
+
+
+
+
+
 
 .navigation-container {
   margin-left: 30px !important;
@@ -31,7 +111,6 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   .brand {
     gap: 10px;
 }
-
 .navbar {
     transition: all 1s;
     background-color: #FFFFFF73;
@@ -67,9 +146,62 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   background-color: var(--color-bgcolor);
 }
 
-/* main */
 
-/* footer */
+
+
+
+
+#searchDropdown,#searchDropdown:active,#searchDropdown:focus,
+#UserDropdown,#UserDropdown:active,#UserDropdown:focus{
+  border: none !important;
+  outline: none !important ;
+}
+
+.search-style {
+  border: none !important;
+  border-top: none !important;
+  margin-top: 0.65rem !important;
+  border-radius: 0 0 10px 10px !important;
+}
+
+
+
+
+
+
+
+
+.profile-dropdown{
+  max-width: 250px;
+}
+.profile-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.dropdown-center:hover>.dropdown-menu {
+  display: block;
+  position: absolute;
+  bottom: 100;
+  left: -300%;
+}
+.dropdown-center .dropdown-menu li a:active {
+  border-radius: 5px;
+  background-color: var(--primary) !important;
+  color: var(--bg-color) !important;
+}
+.dropdown-center>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+/* footer full */
 .footer {
     background: url("../img/footer-bg.png") no-repeat;
     padding-top: 3rem;
@@ -125,67 +257,21 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     background-color: #00897b;
   }
   
-/* font */
-@font-face {
-	font-family: "ubuntu";
-	src: url(../../font/Ubuntu-Medium.ttf),
-		url(../../font/Ubuntu-MediumItalic.ttf), url(../../font/Ubuntu-Bold.ttf),
-		url(../../font/Ubuntu-BoldItalic.ttf), url(../../font/Ubuntu-Light.ttf),
-		url(../../font/Ubuntu-LightItalic.ttf),
-		url(../../font/Ubuntu-Regular.ttf), url(../../font/Ubuntu-Italic.ttf);
+
+
+
+
+/* footer only copyright */
+.footer {
+	background-color: var(--primary);
+	/* padding-top: 1rem; */
 }
 
-@font-face {
-	font-family: "Signika";
-	src: url(../../font/Signika-Bold.ttf), url(../../font/Signika-Light.ttf),
-		url(../../font/Signika-Medium.ttf), url(../../font/Signika-Regular.ttf),
-		url(../../font/Signika-SemiBold.ttf);
+.icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
 }
-
-@font-face {
-	font-family: "Peyda";
-	src: url(../../font/Peyda-Black[@mimvid].ttf),
-		url(../../font/Peyda-Bold[@mimvid].ttf),
-		url(../../font/Peyda-ExtraBold[@mimvid].ttf),
-		url(../../font/Peyda-ExtraLight[@mimvid].ttf),
-		url(../../font/Peyda-Light[@mimvid].ttf),
-		url(../../font/Peyda-Medium[@mimvid].ttf),
-		url(../../font/Peyda-Regular[@mimvid].ttf),
-		url(../../font/Peyda-SemiBold[@mimvid].ttf),
-		url(../../font/Peyda-Thin[@mimvid].ttf);
-}
-
-@font-face {
-	font-family: "Inter-black";
-	src: url(../../font/Inter_18pt-Black.ttf);
-}
-
-/* root colors */
-:root {
-	--color-bgcolor: #eff3ff;
-	--primary: #010c8e;
-	--primary-low: #010c8e80;
-}
-
-/* colors */
-.primary-color {
-	color: var(--primary) !important;
-}
-
-.primary-color-low {
-	color: var(--primary-low) !important;
-}
-
-.white-color {
-	color: var(--color-bgcolor) !important;
-}
-
-/* background colors */
-
-.bg-color-primary {
-	background-color: var(--primary) !important;
-}
-
-.bg-color-bg {
-	background-color: var(--color-bgcolor) !important;
+.icons .row .d-flex {
+	gap: 2rem;
 }

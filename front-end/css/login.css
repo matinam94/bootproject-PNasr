@@ -142,31 +142,31 @@ main {
 /* font */
 @font-face {
     font-family: "ubuntu";
-    src: url(../../font/Ubuntu-Medium.ttf),
-        url(../../font/Ubuntu-MediumItalic.ttf), url(../../font/Ubuntu-Bold.ttf),
-        url(../../font/Ubuntu-BoldItalic.ttf), url(../../font/Ubuntu-Light.ttf),
-        url(../../font/Ubuntu-LightItalic.ttf),
-        url(../../font/Ubuntu-Regular.ttf), url(../../font/Ubuntu-Italic.ttf);
+    src: url(../Fonts/Ubuntu-Medium.ttf),
+        url(../Fonts/Ubuntu-MediumItalic.ttf), url(../Fonts/Ubuntu-Bold.ttf),
+        url(../Fonts/Ubuntu-BoldItalic.ttf), url(../Fonts/Ubuntu-Light.ttf),
+        url(../Fonts/Ubuntu-LightItalic.ttf),
+        url(../Fonts/Ubuntu-Regular.ttf), url(../Fonts/Ubuntu-Italic.ttf);
 }
 
 @font-face {
     font-family: "Signika";
-    src: url(../../font/Signika-Bold.ttf), url(../../font/Signika-Light.ttf),
-        url(../../font/Signika-Medium.ttf), url(../../font/Signika-Regular.ttf),
-        url(../../font/Signika-SemiBold.ttf);
+    src: url(../Fonts/Signika-Bold.ttf), url(../Fonts/Signika-Light.ttf),
+        url(../Fonts/Signika-Medium.ttf), url(../Fonts/Signika-Regular.ttf),
+        url(../Fonts/Signika-SemiBold.ttf);
 }
 
 @font-face {
     font-family: "Peyda";
-    src: url(../../font/Peyda-Black[@mimvid].ttf),
-        url(../../font/Peyda-Bold[@mimvid].ttf),
-        url(../../font/Peyda-ExtraBold[@mimvid].ttf),
-        url(../../font/Peyda-ExtraLight[@mimvid].ttf),
-        url(../../font/Peyda-Light[@mimvid].ttf),
-        url(../../font/Peyda-Medium[@mimvid].ttf),
-        url(../../font/Peyda-Regular[@mimvid].ttf),
-        url(../../font/Peyda-SemiBold[@mimvid].ttf),
-        url(../../font/Peyda-Thin[@mimvid].ttf);
+    src: url(../Fonts/Peyda-Black[@mimvid].ttf),
+        url(../Fonts/Peyda-Bold[@mimvid].ttf),
+        url(../Fonts/Peyda-ExtraBold[@mimvid].ttf),
+        url(../Fonts/Peyda-ExtraLight[@mimvid].ttf),
+        url(../Fonts/Peyda-Light[@mimvid].ttf),
+        url(../Fonts/Peyda-Medium[@mimvid].ttf),
+        url(../Fonts/Peyda-Regular[@mimvid].ttf),
+        url(../Fonts/Peyda-SemiBold[@mimvid].ttf),
+        url(../Fonts/Peyda-Thin[@mimvid].ttf);
 }
 
 @font-face {

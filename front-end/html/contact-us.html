@@ -19,7 +19,7 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-light bg-* fixed-top mt-5 mx-5 mw-75 rounded-5 shadow">
+		<nav class="navbar navbar-expand-md fixed-top mt-5 mx-5 mw-75 rounded-5 shadow">
 			<div class="container">
 				<a class="navbar-brand" href="#">InnoWater</a>
 
@@ -29,15 +29,10 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-between" style="width: 550px">
+					<ul class="navbar-nav nav-links primary-color mx-auto mb-2 mb-lg-0 justify-content-between"
+						style="width: 550px">
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">How it works</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About-Us</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Shop</a>
@@ -45,14 +40,17 @@
 						<li class="nav-item">
 							<a class="nav-link" href="blog.html">Blog</a>
 						</li>
-
-						<li class="nav-item fw-bold fst-italic active">
-							<a class="nav-link" href="#">Contact-Us</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About-Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fw-bold fst-italic" href="contact-us.html">Contact-Us</a>
 						</li>
 					</ul>
 
 					<ul class="navbar-nav mb-2 mb-lg-0 justify-content-between align-items-center">
-						<li>
+						
+						<li class="nav-item">
 							<div class="dropdown">
 								<button id="searchDropdown" class="btn" type="button" data-bs-toggle="dropdown"
 									data-bs-auto-close="false" aria-expanded="false">
@@ -67,15 +65,19 @@
 										</defs>
 									</svg>
 								</button>
-								<div class="dropdown-menu p-3 dropdown-menu-end" aria-labelledby="searchDropdown"
+								<div id="search-box" 
+								class="dropdown-menu search-style bg-color-bg-50 p-3 dropdown-menu-end" 
+								aria-labelledby="searchDropdown"
 									style="width: 400px">
-									<form id="searchForm" action="your_search_url" method="GET">
+									<form  id="searchForm" action="your_search_url" method="GET">
 										<div class="input-group">
 											<input type="text" class="form-control" name="search"
 												placeholder="Write Here" aria-label="Search" />
-											<button class="btn btn-primary" type="submit">
-												Search
-											</button>
+											<a href="">
+												<button class="btn search-btn bg-color-primary white-color" type="submit">
+													Search
+												</button>
+											</a>
 										</div>
 									</form>
 								</div>
@@ -91,13 +93,55 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="login btn bg-color-primary white-color rounded-5" id="login" href="#">Login</a>
+							<a class="login btn bg-color-primary white-color rounded-5" id="login" href="login.html">Login</a>
 						</li>
+
+						<li class="user-dropdown d-none">
+
+							<div class="dropdown-center">
+								<div class="d-flex align-items-center">
+										<button id="UserDropdown" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"  
+											aria-expanded="false">
+
+											<svg class="me-2" width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="person" d="M1.54199 1.10056L1.54199 38.1397" stroke="#010c8e" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+											
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="person" d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="#010c8e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+					
+										</button>
+								</div>
+								<ul class="dropdown-menu profile-dropdown p-3 dropdown-menu-end" aria-labelledby="UserDropdown">
+									<li>
+										<a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+											
+											<img class="profile-avatar" src="../img/accuount avatar/crocodile1.png" alt="">
+											
+											<p class="ms-3 mb-0 overflow-hidden">matin94dddddddddddddddddd</p>
+										</a>
+									</li>
+
+									<li><hr class="dropdown-divider"></li>
+
+									<li><a class="dropdown-item" href="#">Orders</a></li>
+									<li><a class="dropdown-item" href="#">Tickets</a></li>
+									<li><a class="dropdown-item" href="#">Acount Details</a></li>
+
+									<li><hr class="dropdown-divider"></li>
+
+									<li><a class="dropdown-item" href="#">Log Out</a></li>
+								</ul>
+							</div>
+						</li>
+
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+
 
 
 	<section class="contacts">
@@ -272,10 +316,12 @@
 		const navEl = document.querySelector(".navbar");
 		const navBrand = document.querySelector(".navbar-brand");
 		const navLinks = document.querySelectorAll(".nav-link");
-		const cartshop = document.querySelector(".cart-shop");
-		const person = document.querySelector(".person");
-		const login = document.querySelector(".login");
 		const search = document.querySelector(".search-icon");
+		const search_box=document.querySelector("#search-box")
+		const search_btn = document.querySelector(".search-btn");
+		const cartshop = document.querySelector(".cart-shop");
+		const login = document.querySelector(".login");
+		const person = document.querySelectorAll(".person");
 
 		window.addEventListener("scroll", () => {
 			if (window.scrollY >= 60) {
@@ -291,11 +337,26 @@
 				search.removeAttribute("stroke");
 				search.setAttribute("stroke" ,"#eff3ff");
 
-				cartshop.removeAttribute("fill")
-				cartshop.setAttribute("fill" ,"#eff3ff")
+				search_box.classList.remove("bg-color-bg-50");
+				search_box.classList.add("bg-color-primary");
+
+				search_btn.classList.remove("bg-color-primary", "white-color");
+				search_btn.classList.add("bg-color-bg", "primary-color");
+
+				cartshop.removeAttribute("fill");
+				cartshop.setAttribute("fill" ,"#eff3ff");
 
 				login.classList.remove("white-color", "bg-color-primary");
 				login.classList.add("primary-color", "bg-color-bg");
+			
+				person.forEach((svg) => {
+					svg.removeAttribute("stroke")
+					svg.setAttribute("stroke" ,"#eff3ff")
+				});
+				
+				
+			
+			
 			} else if (window.scrollY < 60) {
 				navEl.classList.remove("navbar-scrolled");
 				navEl.classList.add("mt-5", "rounded-5", "mx-5");
@@ -309,11 +370,22 @@
 				search.removeAttribute("stroke");
 				search.setAttribute("stroke" ,"#010c8e");
 
+				search_box.classList.remove("bg-color-primary");
+				search_box.classList.add("bg-color-bg-50");
+
+				search_btn.classList.remove("bg-color-bg", "primary-color");
+				search_btn.classList.add("bg-color-primary", "white-color");
+
 				cartshop.removeAttribute("fill");
 				cartshop.setAttribute("fill" ,"#010c8e");
 
 				login.classList.remove("primary-color", "bg-color-bg");
 				login.classList.add("white-color", "bg-color-primary");
+				
+				person.forEach((svg) => {
+					svg.removeAttribute("stroke")
+					svg.setAttribute("stroke" ,"#010c8e")
+				});
 			}
 		});
 	</script>

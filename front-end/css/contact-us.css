@@ -1,121 +1,192 @@
 @font-face {
-    font-family: "ubuntu";
-    src: url(/front-end/Fonts/Ubuntu-Medium.ttf),
-        url(/front-end/Fonts/Ubuntu-MediumItalic.ttf),
-        url(/front-end/Fonts/Ubuntu-Bold.ttf),
-        url(/front-end/Fonts/Ubuntu-BoldItalic.ttf),
-        url(/front-end/Fonts/Ubuntu-Light.ttf),
-        url(/front-end/Fonts/Ubuntu-LightItalic.ttf),
-        url(/front-end/Fonts/Ubuntu-Regular.ttf),
-        url(/front-end/Fonts/Ubuntu-Italic.ttf);
+	font-family: "ubuntu";
+	src: url(../Fonts/Ubuntu-Medium.ttf),
+		url(../Fonts/Ubuntu-MediumItalic.ttf), url(../Fonts/Ubuntu-Bold.ttf),
+		url(../Fonts/Ubuntu-BoldItalic.ttf), url(../Fonts/Ubuntu-Light.ttf),
+		url(../Fonts/Ubuntu-LightItalic.ttf),
+		url(../Fonts/Ubuntu-Regular.ttf), url(../Fonts/Ubuntu-Italic.ttf);
 }
 @font-face {
-    font-family: "Signika";
-    src: url(/front-end/Fonts/Signika-Bold.ttf),
-        url(/front-end/Fonts/Signika-Light.ttf),
-        url(/front-end/Fonts/Signika-Medium.ttf),
-        url(/front-end/Fonts/Signika-Regular.ttf),
-        url(/front-end/Fonts/Signika-SemiBold.ttf);
+	font-family: "Signika";
+	src: url(../Fonts/Signika-Bold.ttf), url(../Fonts/Signika-Light.ttf),
+		url(../Fonts/Signika-Medium.ttf), url(../Fonts/Signika-Regular.ttf),
+		url(../Fonts/Signika-SemiBold.ttf);
 }
 @font-face {
-  font-family: "Peyda";
-  src: url(/front-end/Fonts/Peyda-Black[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-Bold[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-ExtraBold[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-ExtraLight[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-Light[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-Medium[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-Regular[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-SemiBold[@mimvid].ttf),
-        url(/front-end/Fonts/Peyda-Thin[@mimvid].ttf);
+	font-family: "Peyda";
+	src: url(../Fonts/Peyda-Black[@mimvid].ttf),
+		url(../Fonts/Peyda-Bold[@mimvid].ttf),
+		url(../Fonts/fontPeyda-ExtraBold[@mimvid].ttf),
+		url(../Fonts/Peyda-ExtraLight[@mimvid].ttf),
+		url(../Fonts/Peyda-Light[@mimvid].ttf),
+		url(../Fonts/Peyda-Medium[@mimvid].ttf),
+		url(../Fonts/Peyda-Regular[@mimvid].ttf),
+		url(../Fonts/Peyda-SemiBold[@mimvid].ttf),
+		url(../Fonts/Peyda-Thin[@mimvid].ttf);
+}
+@font-face {
+	font-family: "Inter-black";
+	src: url(../Fonts/Inter_18pt-Black.ttf);
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 :root {
-  --primary: #010c8e;
-  --bg-color: #eff3ff
+	--primary: #010c8e;
+	--primary-50: #010c8e50;
+  --bg-color: #eff3ff;
+  --bg-color-50: #eff3ff50;
 }
-
 
 body {
-  font-family: "ubuntu";
-  background-color: var(--bg-color);
-  color: var(--primary) !important;
-  height: 100vh;
+	font-family: "ubuntu";
+	background-color: var(--bg-color);
+	color: var(--primary) !important;
+	height: 100vh;
 }
-
 
 
 
 .white-color {
-  color: var(--bg-color) !important;
-}
-.primary-color {
-  color: var(--primary) !important;
-}
-.bg-color-primary {
-  background-color: var(--primary) !important;
-}
-.bg-color-bg {
-  background-color: var(--bg-color) !important;
-}
-
-
+	color: var(--bg-color) !important;
+  }
+  .white-50-color{
+	color: var(--bg-color-50);
+  }
+  .primary-color {
+	color: var(--primary) !important;
+  }
+  .primary-50-color {
+	color: var(--primary) !important;
+  }
+  
+  .bg-color-primary {
+	background-color: var(--primary) !important;
+  }
+  .bg-color-primary-50 {
+	background-color: var(--primary-50y) !important;
+  }
+  .bg-color-bg {
+	background-color: var(--bg-color) !important;
+  }
+  .bg-color-bg-50 {
+	background-color: var(--bg-color-50) !important;
+  }
+  .bg-trans {
+	background-color: transparent !important;
+  }
+  
+  
+  
+  
 
 
 nav {
-  color: var(--primary);
+	color: var(--primary);
 }
 nav .navbar-brand,
 nav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: inherit;
-  }
+	color: inherit;
+}
 nav .dropdown-toggle::after {
-    display: none !important; 
+	display: none !important;
+}
+.navbar-brand {
+	margin: 0;
+}
+.brand {
+	gap: 10px;
+}
+.navbar-nav.mb-2.mb-lg-0.justify-content-between.align-items-center li a {
+	text-decoration: none;
+}
+.navbar {
+	transition: all 1s;
+	background-color: #ffffff73;
+}
+.navbar-scrolled {
+	background-color: var(--primary) !important;
+	box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
+}
+.navbar-nav .nav-item .nav-link {
+	position: relative;
+	transition: color 0.3s ease;
+}
+.nav-links .nav-item .nav-link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background-color: var(--primary);
+	transition: all 0.3s ease;
+}
+
+.nav-links .nav-item .nav-link:hover::after {
+	width: 100%;
+	left: 0;
+}
+.navbar-scrolled .navbar-nav .nav-item .nav-link::after {
+	background-color: white;
+}
+
+
+
+#searchDropdown,#searchDropdown:active,#searchDropdown:focus,
+#UserDropdown,#UserDropdown:active,#UserDropdown:focus{
+  border: none !important;
+  outline: none !important ;
+}
+
+.search-style {
+  border: none !important;
+  border-top: none !important;
+  margin-top: 0.65rem !important;
+  border-radius: 0 0 10px 10px !important;
+}
+
+
+
+.search-style {
+	border: none !important;
+	border-top: none !important;
+	margin-top: 0.65rem !important;
+	border-radius: 0 0 10px 10px !important;
   }
-  .navbar-brand{
-    margin: 0;
+
+
+
+
+.profile-dropdown{
+	max-width: 250px;
   }
-  .brand {
-    gap: 10px;
+  .profile-avatar{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
   }
-  .navbar-nav.mb-2.mb-lg-0.justify-content-between.align-items-center li a {
-    text-decoration: none;
-}  
-  .navbar {
-    transition: all 1s;
-    background-color: #FFFFFF73;
-}
-  .navbar-scrolled {
-    background-color: var(--primary) !important;
-    box-shadow: 0 3px 10px rgba(13, 71, 161, 0.15) !important;
-}
-  .navbar-nav .nav-item .nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-  .navbar-nav .nav-item .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: var(--primary);
-  transition: all 0.3s ease;
-}
-  .navbar-nav .nav-item .nav-link:hover::after {
-  width: 100%;
-  left: 0;
-}
-  .navbar-scrolled .navbar-nav .nav-item .nav-link::after {
-  background-color: white;
-}
+  
+  .dropdown-center:hover>.dropdown-menu {
+	display: block;
+	position: absolute;
+	bottom: 100;
+	left: -300%;
+  }
+  .dropdown-center .dropdown-menu li a:active {
+	border-radius: 5px;
+	background-color: var(--primary) !important;
+	color: var(--bg-color) !important;
+  }
+  .dropdown-center>.dropdown-toggle:active {
+	  pointer-events: none;
+  }
+
+
 
 
 
@@ -123,74 +194,73 @@ nav .dropdown-toggle::after {
 
 
 .contacts {
-  height: 100vh;
-  background: url("../img/Vector\ 4.png") no-repeat center center;
-  background-size: cover;
-  padding: 50px 0;
-  text-align: center;  
-}    
+	height: 100vh;
+	background: url("../img/Vector\ 4.png") no-repeat center center;
+	background-size: cover;
+	padding: 50px 0;
+	text-align: center;
+}
 .contacts h1 {
-  font-size: 60px;
-  margin-top: 200px;
-  margin-bottom: 50px;
+	font-size: 60px;
+	margin-top: 200px;
+	margin-bottom: 50px;
 }
 
 .row-contain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .cards:hover {
-  transform: translateY(-10px);
+	transform: translateY(-10px);
 }
 
 .cards2 {
-  background: url("../img/telegram.png") no-repeat;
+	background: url("../img/telegram.png") no-repeat;
 }
 .cards3 {
-  background: url("../img/telephon.png") no-repeat;
+	background: url("../img/telephon.png") no-repeat;
 }
 .cards1 {
-  background: url("../img/g\ mail.png") no-repeat;
+	background: url("../img/g\ mail.png") no-repeat;
 }
 .cards {
-  background-position: center;
-  width: 25rem;
-  height: 21rem;
-  margin: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+	background-position: center;
+	width: 25rem;
+	height: 21rem;
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .content {
-  margin-top: 10rem;
-  width: 77%;
-  margin-left: auto;
-  margin-right: auto;
+	margin-top: 10rem;
+	width: 77%;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-
-
 
 .under-contact-cards {
-  padding-bottom: 15rem !important;
+	padding-bottom: 15rem !important;
 }
+
+
 
 
 .footer {
-  background-color: var(--primary);
-  /* padding-top: 1rem; */
+	background-color: var(--primary);
+	/* padding-top: 1rem; */
 }
 
 .icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
 }
-.icons .row .d-flex{
-  gap: 2rem;
+.icons .row .d-flex {
+	gap: 2rem;
 }

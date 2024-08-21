@@ -90,7 +90,7 @@
 
 						<!-- login button -->
 						<li class="nav-item d-none ms-2">
-							<a class="login btn bg-color-bg primary-color rounded-5" id="login" href="#">Login</a>
+							<a class="login btn bg-color-bg primary-color rounded-5" id="login" href="login.html">Login</a>
 						</li>
 
 						<!-- user dropdown -->
@@ -216,7 +216,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="login btn bg-color-primary white-color rounded-5" id="login" href="#">Login</a>
+							<a class="login btn bg-color-primary white-color rounded-5" id="login" href="login.html">Login</a>
 						</li>
 
 						<li class="user-dropdown d-none">
@@ -455,5 +455,54 @@
 	</footer>
 
 
+	<script>
+		const navEl = document.querySelector(".navbar");
+		const navBrand = document.querySelector(".navbar-brand");
+		const navLinks = document.querySelectorAll(".nav-link");
+		const cartshop = document.querySelector(".cart-shop");
+		const person = document.querySelector(".person");
+		const login = document.querySelector(".login");
+		const search = document.querySelector(".search-icon");
+
+		window.addEventListener("scroll", () => {
+			if (window.scrollY >= 60) {
+				navEl.classList.add("navbar-scrolled");
+				navEl.classList.remove("mt-5", "rounded-5", "mx-5");
+
+				navBrand.classList.add("white-color");
+
+				navLinks.forEach((link) => {
+					link.classList.add("white-color");
+				});
+
+				search.removeAttribute("stroke");
+				search.setAttribute("stroke", "#eff3ff");
+
+				cartshop.removeAttribute("fill")
+				cartshop.setAttribute("fill", "#eff3ff")
+
+				login.classList.remove("white-color", "bg-color-primary");
+				login.classList.add("primary-color", "bg-color-bg");
+			} else if (window.scrollY < 60) {
+				navEl.classList.remove("navbar-scrolled");
+				navEl.classList.add("mt-5", "rounded-5", "mx-5");
+
+				navBrand.classList.remove("white-color");
+
+				navLinks.forEach((link) => {
+					link.classList.remove("white-color");
+				});
+
+				search.removeAttribute("stroke");
+				search.setAttribute("stroke", "#010c8e");
+
+				cartshop.removeAttribute("fill");
+				cartshop.setAttribute("fill", "#010c8e");
+
+				login.classList.remove("primary-color", "bg-color-bg");
+				login.classList.add("white-color", "bg-color-primary");
+			}
+		});
+	</script>
 </body>
 </html>
